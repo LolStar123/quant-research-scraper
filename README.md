@@ -1,53 +1,44 @@
-# quant finance research scraper
+# quant research reading room
 
-Collects papers, removes duplicates and keeps the source beside each research idea.
+**[Open the live library](https://lolstar123.github.io/quant-research-scraper/)**
 
-<!-- working-example:start -->
-## Try it in a minute
+Collect research metadata, remove duplicate papers and build a reading list for your next market experiment. The library opens with 320 real papers across eight searches, including market microstructure, options pricing and statistical arbitrage.
 
-**[Live example](https://lolstar123.github.io/quant-research-scraper/)** · [Example code](examples/portfolio/model.mjs) · [Run locally](examples/portfolio/README.md) · [Atul's website](https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site)
+![Research reading room](examples/portfolio/preview.png)
 
-Clean and search a small research catalogue; export the reading list.
+## Try it
 
-<img src="examples/portfolio/preview.png" alt="quant finance research scraper example inputs and calculated output" width="760">
+Type to filter the bundled library. Choose a collection, sort by date or citations, and save interesting papers. Use **search live Crossref** to collect up to 40 more results from a public metadata API. Export your saved list as BibTeX or JSON; import it on another browser. Saved lists remain in local browser storage.
 
-<!-- working-example:end -->
+No login or API key. If Crossref is unavailable, the bundled library, filtering and exports still work. Full articles remain on the publisher's site; a DOI link may lead to a paywall.
 
-## The project
+## Run the collectors
 
-Search for a topic, collect paper metadata, then deduplicate by DOI or title. The reading list keeps titles, dates and source links together so an interesting idea can become a testable strategy.
+```sh
+# Refresh all eight topic collections from Crossref.
+python collector/refresh_catalogue.py
+# Or collect your own topic into a separate list.
+python collector/refresh_catalogue.py --query "gamma scalping" --rows 60 --output reading-list.json
+# Parse citation meta tags from saved HTML or a public page.
+python collector/collect.py collector/paper.html --output citations.json
+```
 
-Less time reopening the same papers. More time checking the idea.
+The Python collector records DOI, title, authors, year, journal, citation count, topic and collection time. The browser deduplicates DOI variants and upgrades title-only entries when a DOI arrives. Different DOIs sharing a title are preserved as possible distinct editions.
 
-## Find your way around
-
-| Path | What is here |
-| --- | --- |
-| [examples/portfolio](examples/portfolio) | Runnable browser example and fixtures |
-| [model.mjs](examples/portfolio/model.mjs) | Actual calculation or workflow |
-| [model.test.mjs](examples/portfolio/model.test.mjs) | Reproducible checks and edge cases |
-| [PROVENANCE.md](PROVENANCE.md) | How this example relates to the full project |
-| [AGENTS.md](AGENTS.md) | Instructions for extending the example |
-
-## Quick start
+## Run the app and checks
 
 ```sh
 python -m http.server 8000 --directory examples/portfolio
 node --test examples/portfolio/model.test.mjs
+pip install playwright
+python -m playwright install chromium
+python tools/browser_audit.py
 ```
 
-Open http://localhost:8000. No dependencies, accounts or API keys needed.
+Open http://localhost:8000. GitHub Actions checks local and public interactions every four hours. The bundled collection is a dated snapshot; live searches fetch new metadata on demand.
 
-## What is included
+## Find the code
 
-A compact public collection example with authored fixture records. It does not redistribute paper text.
+[Collection scripts](collector) / [normalisation and export](examples/portfolio/model.mjs) / [browser interface](examples/portfolio/app.mjs) / [source notes](PROVENANCE.md).
 
-## Collect a saved paper page
-
-The Python collector reads citation metadata from HTML, merges duplicates and saves a reading list.
-
-```sh
-python collector/collect.py collector/paper.html --output reading-list.json
-```
-
-Use `--url https://...` for a public page that exposes `citation_title` metadata. The included HTML is an authored parser fixture.
+The folder interaction takes inspiration from [Rare UI](https://www.rareui.com/components/foldercomponent). This implementation is original vanilla HTML/CSS/JS; it does not redistribute Rare UI component source.

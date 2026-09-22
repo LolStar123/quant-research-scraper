@@ -1,0 +1,4809 @@
+{
+  "collected": "2026-09-22T22:14:08.470680+00:00",
+  "source": "Crossref REST API",
+  "topics": [
+    "market microstructure",
+    "momentum investing",
+    "options pricing",
+    "portfolio optimisation",
+    "volatility forecasting",
+    "fluid mechanics finance",
+    "statistical arbitrage",
+    "machine learning asset pricing"
+  ],
+  "papers": [
+    {
+      "doi": "10.1016/0304-405x(76)90006-4",
+      "title": "Market microstructure",
+      "authors": [
+        "Mark B. Garman"
+      ],
+      "year": 1976,
+      "journal": "Journal of Financial Economics",
+      "url": "https://doi.org/10.1016/0304-405x(76)90006-4",
+      "citations": 506,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.irfa.2006.04.002",
+      "title": "Asian market microstructure",
+      "authors": [
+        "David K. Ding",
+        "Charlie Charoenwong"
+      ],
+      "year": 2006,
+      "journal": "International Review of Financial Analysis",
+      "url": "https://doi.org/10.1016/j.irfa.2006.04.002",
+      "citations": 2,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2307/2329383",
+      "title": "Market Microstructure Theory.",
+      "authors": [
+        "Steven C. Mann",
+        "Maureen O'Hara"
+      ],
+      "year": 1996,
+      "journal": "The Journal of Finance",
+      "url": "https://doi.org/10.2307/2329383",
+      "citations": 2,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1146/annurev-financial-112923-112656",
+      "title": "Regulating Market Microstructure",
+      "authors": [
+        "Thomas H. Ernst",
+        "Chester S. Spatt"
+      ],
+      "year": 2025,
+      "journal": "Annual Review of Financial Economics",
+      "url": "https://doi.org/10.1146/annurev-financial-112923-112656",
+      "citations": 1,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/s1386-4181(00)00007-0",
+      "title": "Market microstructure: A survey",
+      "authors": [
+        "Ananth Madhavan"
+      ],
+      "year": 2000,
+      "journal": "Journal of Financial Markets",
+      "url": "https://doi.org/10.1016/s1386-4181(00)00007-0",
+      "citations": 724,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2022.2080103",
+      "title": "Market Microstructure in Practice",
+      "authors": [
+        "Nataliya Bershova"
+      ],
+      "year": 2022,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2022.2080103",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2307/3666197",
+      "title": "Making Market Microstructure Matter",
+      "authors": [
+        "Maureen O'Hara"
+      ],
+      "year": 1999,
+      "journal": "Financial Management",
+      "url": "https://doi.org/10.2307/3666197",
+      "citations": 28,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2469/dig.v30.n2.681",
+      "title": "Making Market Microstructure Matter",
+      "authors": [
+        "Roger Ignatius"
+      ],
+      "year": 2000,
+      "journal": "CFA Digest",
+      "url": "https://doi.org/10.2469/dig.v30.n2.681",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1257/jep.10.3.135",
+      "title": "Market Microstructure and Intermediation",
+      "authors": [
+        "Daniel F Spulber"
+      ],
+      "year": 1996,
+      "journal": "Journal of Economic Perspectives",
+      "url": "https://doi.org/10.1257/jep.10.3.135",
+      "citations": 274,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2469/dig.v45.n11.2",
+      "title": "High Frequency Market           Microstructure",
+      "authors": [
+        "Priyanka Shukla"
+      ],
+      "year": 2015,
+      "journal": "CFA Digest",
+      "url": "https://doi.org/10.2469/dig.v45.n11.2",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jeconbus.2005.10.001",
+      "title": "Transparency and market microstructure",
+      "authors": [
+        "Daniel G. Weaver"
+      ],
+      "year": 2005,
+      "journal": "Journal of Economics and Business",
+      "url": "https://doi.org/10.1016/j.jeconbus.2005.10.001",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jfineco.2015.01.003",
+      "title": "High frequency market microstructure",
+      "authors": [
+        "Maureen O’Hara"
+      ],
+      "year": 2015,
+      "journal": "Journal of Financial Economics",
+      "url": "https://doi.org/10.1016/j.jfineco.2015.01.003",
+      "citations": 519,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/0304-405x(90)90050-a",
+      "title": "Market microstructure and asset pricing",
+      "authors": [
+        "Marc R. Reinganum"
+      ],
+      "year": 1990,
+      "journal": "Journal of Financial Economics",
+      "url": "https://doi.org/10.1016/0304-405x(90)90050-a",
+      "citations": 87,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/s0929-1199(02)00051-2",
+      "title": "Market microstructure and corporate finance",
+      "authors": [
+        "Marc L. Lipson"
+      ],
+      "year": 2003,
+      "journal": "Journal of Corporate Finance",
+      "url": "https://doi.org/10.1016/s0929-1199(02)00051-2",
+      "citations": 24,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.4236/jmf.2013.31001",
+      "title": "Market Microstructure and Price Discovery",
+      "authors": [
+        "Paul Carlisle Kettler",
+        "Aleh L. Yablonski",
+        "Frank Proske"
+      ],
+      "year": 2013,
+      "journal": "Journal of Mathematical Finance",
+      "url": "https://doi.org/10.4236/jmf.2013.31001",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1538-4616.2012.00530.x",
+      "title": "Money: A Market Microstructure Approach",
+      "authors": [
+        "MALTE KRUEGER"
+      ],
+      "year": 2012,
+      "journal": "Journal of Money, Credit and Banking",
+      "url": "https://doi.org/10.1111/j.1538-4616.2012.00530.x",
+      "citations": 5,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.3982/ecta10486",
+      "title": "Market Microstructure Invariance: Empirical Hypotheses",
+      "authors": [
+        "Albert S. Kyle",
+        "Anna A. Obizhaeva"
+      ],
+      "year": 2016,
+      "journal": "Econometrica",
+      "url": "https://doi.org/10.3982/ecta10486",
+      "citations": 206,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/s1386-4181(00)00022-7",
+      "title": "Market microstructure and securities values:",
+      "authors": [
+        "Chris J. Muscarella",
+        "Michael S. Piwowar"
+      ],
+      "year": 2001,
+      "journal": "Journal of Financial Markets",
+      "url": "https://doi.org/10.1016/s1386-4181(00)00022-7",
+      "citations": 59,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1080/01621459.2026.2622104",
+      "title": "The Explicative Market Microstructure Noise",
+      "authors": [
+        "Wenhao Cui"
+      ],
+      "year": 2026,
+      "journal": "Journal of the American Statistical Association",
+      "url": "https://doi.org/10.1080/01621459.2026.2622104",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2469/faj.v58.n5.2466",
+      "title": "Market Microstructure: A Practitioner's Guide",
+      "authors": [
+        "Ananth Madhavan"
+      ],
+      "year": 2002,
+      "journal": "Financial Analysts Journal",
+      "url": "https://doi.org/10.2469/faj.v58.n5.2466",
+      "citations": 29,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1111/jpet.70114",
+      "title": "Market Microstructure and Informational Complexity",
+      "authors": [
+        "Rafael R. Guthmann",
+        "Brian C. Albrecht"
+      ],
+      "year": 2026,
+      "journal": "Journal of Public Economic Theory",
+      "url": "https://doi.org/10.1111/jpet.70114",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jeconbus.2004.04.001",
+      "title": "Disclosure, Transparency and Market Microstructure",
+      "authors": [],
+      "year": 2004,
+      "journal": "Journal of Economics and Business",
+      "url": "https://doi.org/10.1016/j.jeconbus.2004.04.001",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2722524",
+      "title": "Market Microstructure Invariance: Empirical Hypotheses",
+      "authors": [
+        "Albert S. Kyle",
+        "Anna A. Obizhaeva"
+      ],
+      "year": 2016,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2722524",
+      "citations": 10,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/s0148-6195(04)00017-7",
+      "title": "Disclosure, Transparency and Market Microstructure",
+      "authors": [],
+      "year": 2004,
+      "journal": "Journal of Economics and Business",
+      "url": "https://doi.org/10.1016/s0148-6195(04)00017-7",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1007/s11408-007-0058-2",
+      "title": "Joel Hasbrouck: Empirical Market Microstructure",
+      "authors": [
+        "Rico von Wyss"
+      ],
+      "year": 2007,
+      "journal": "Financial Markets and Portfolio Management",
+      "url": "https://doi.org/10.1007/s11408-007-0058-2",
+      "citations": 1,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.3934/fmf.2023003",
+      "title": "Power laws in market microstructure",
+      "authors": [
+        "Umut Çetin",
+        "",
+        "Henri Waelbroeck",
+        ""
+      ],
+      "year": 2023,
+      "journal": "Frontiers of Mathematical Finance",
+      "url": "https://doi.org/10.3934/fmf.2023003",
+      "citations": 1,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.econlet.2016.10.032",
+      "title": "Investor attention and market microstructure",
+      "authors": [
+        "Xinfeng Ruan",
+        "Jin E. Zhang"
+      ],
+      "year": 2016,
+      "journal": "Economics Letters",
+      "url": "https://doi.org/10.1016/j.econlet.2016.10.032",
+      "citations": 22,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1007/bf02295711",
+      "title": "Market microstructure and security pricing in the warsaw market",
+      "authors": [
+        "John W. Sell"
+      ],
+      "year": 2003,
+      "journal": "International Advances in Economic Research",
+      "url": "https://doi.org/10.1007/bf02295711",
+      "citations": 1,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.35866/caujed.2007.32.1.006",
+      "title": "How to Intervene in FX Market : Market Microstructure Approach",
+      "authors": [
+        "WONCHANG JANG"
+      ],
+      "year": 2007,
+      "journal": "Journal of Economic Development",
+      "url": "https://doi.org/10.35866/caujed.2007.32.1.006",
+      "citations": 1,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.17492/jpi.mudra.v7i2.722028",
+      "title": "A Study of Market Microstructure of Indian Money Market",
+      "authors": [
+        ", ,"
+      ],
+      "year": 2020,
+      "journal": "MUDRA : Journal of Finance and Accounting",
+      "url": "https://doi.org/10.17492/jpi.mudra.v7i2.722028",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2823630",
+      "title": "Dimensional Analysis and Market Microstructure Invariance",
+      "authors": [
+        "Albert S. Kyle",
+        "Anna A. Obizhaeva"
+      ],
+      "year": 2016,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2823630",
+      "citations": 9,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.econlet.2018.08.041",
+      "title": "Liquidity uncertainty and Bitcoin’s market microstructure",
+      "authors": [
+        "Dimitrios Koutmos"
+      ],
+      "year": 2018,
+      "journal": "Economics Letters",
+      "url": "https://doi.org/10.1016/j.econlet.2018.08.041",
+      "citations": 44,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2261100",
+      "title": "Semi Markov Model for Market Microstructure",
+      "authors": [
+        "Pietro Fodra",
+        "Huyên Pham"
+      ],
+      "year": 2013,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2261100",
+      "citations": 6,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.17578/12-3/4-6",
+      "title": "Microstructure of the Irish Stock Market",
+      "authors": [
+        "",
+        "Patricia Chelley Steeley",
+        "Brian Lucey",
+        ""
+      ],
+      "year": 2008,
+      "journal": "Multinational Finance Journal",
+      "url": "https://doi.org/10.17578/12-3/4-6",
+      "citations": 3,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1088/1469-7688/3/2/702",
+      "title": "A close look at market microstructure",
+      "authors": [
+        "Giulia Iori"
+      ],
+      "year": 2003,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1088/1469-7688/3/2/702",
+      "citations": 0,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jbankfin.2009.02.017",
+      "title": "Market microstructure of the Pink Sheets",
+      "authors": [
+        "Nicolas P.B. Bollen",
+        "William G. Christie"
+      ],
+      "year": 2009,
+      "journal": "Journal of Banking &amp; Finance",
+      "url": "https://doi.org/10.1016/j.jbankfin.2009.02.017",
+      "citations": 19,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1198/073500106000000071",
+      "title": "Realized Variance and Market Microstructure Noise",
+      "authors": [
+        "Peter R Hansen",
+        "Asger Lunde"
+      ],
+      "year": 2006,
+      "journal": "Journal of Business &amp; Economic Statistics",
+      "url": "https://doi.org/10.1198/073500106000000071",
+      "citations": 977,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1016/0378-4266(90)90057-9",
+      "title": "Stock market microstructure and return volatility",
+      "authors": [
+        "Yakov Amihud",
+        "Haim Mendelson",
+        "Maurizio Murgia"
+      ],
+      "year": 1990,
+      "journal": "Journal of Banking &amp; Finance",
+      "url": "https://doi.org/10.1016/0378-4266(90)90057-9",
+      "citations": 65,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1467-8454.2004.00217.x",
+      "title": "Strategic Manipulation and Information Market Microstructure",
+      "authors": [
+        "Partha Gangopadhyay"
+      ],
+      "year": 2004,
+      "journal": "Australian Economic Papers",
+      "url": "https://doi.org/10.1111/j.1467-8454.2004.00217.x",
+      "citations": 6,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1093/rfs/4.3.385",
+      "title": "Introduction to the Market Microstructure Symposium",
+      "authors": [
+        "Chester S. Spatt"
+      ],
+      "year": 1991,
+      "journal": "Review of Financial Studies",
+      "url": "https://doi.org/10.1093/rfs/4.3.385",
+      "citations": 2,
+      "topics": [
+        "market microstructure"
+      ]
+    },
+    {
+      "doi": "10.1057/palgrave.jam.2240133",
+      "title": "Momentum investing: A survey",
+      "authors": [
+        "Laurens Swinkels"
+      ],
+      "year": 2004,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/palgrave.jam.2240133",
+      "citations": 23,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1002/pa.2525",
+      "title": "Taming momentum crashes through triple momentum investing",
+      "authors": [
+        "Simarjeet Singh",
+        "Nidhi Walia",
+        "Jinesh Jain",
+        "Aashish Garg"
+      ],
+      "year": 2020,
+      "journal": "Journal of Public Affairs",
+      "url": "https://doi.org/10.1002/pa.2525",
+      "citations": 6,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1057/jam.2011.28",
+      "title": "Style investing and momentum investing: A case study",
+      "authors": [
+        "Sandrine de Moerloose",
+        "Pierre Giot"
+      ],
+      "year": 2011,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/jam.2011.28",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3099687",
+      "title": "Can Momentum Investing Be Saved?",
+      "authors": [
+        "Robert D. mname Arnott",
+        "Vitali mname Kalesnik",
+        "Engin mname Kose",
+        "Lillian J. mname Wu"
+      ],
+      "year": 2017,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3099687",
+      "citations": 2,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2435323",
+      "title": "Fact, Fiction and Momentum Investing",
+      "authors": [
+        "Clifford S. Asness",
+        "Andrea Frazzini",
+        "Ronen Israel",
+        "Tobias J. Moskowitz"
+      ],
+      "year": 2014,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2435323",
+      "citations": 11,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1177/13548166261444769",
+      "title": "Momentum investing in tourism stocks",
+      "authors": [
+        "Mario Gabriel Reyes",
+        "Ming-Hsiang Chen"
+      ],
+      "year": 2026,
+      "journal": "Tourism Economics",
+      "url": "https://doi.org/10.1177/13548166261444769",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/1468-5957.00286",
+      "title": "The Profitability of Momentum Investing",
+      "authors": [
+        "Weimin Lui",
+        "Norman Strong",
+        "Xinzhong Xu"
+      ],
+      "year": 1999,
+      "journal": "Journal of Business Finance &amp; Accounting",
+      "url": "https://doi.org/10.1111/1468-5957.00286",
+      "citations": 72,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2670343",
+      "title": "Momentum Investing &amp; Asset Allocation",
+      "authors": [
+        "Drew Knowles"
+      ],
+      "year": 2015,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2670343",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.3905/jpm.2014.40.5.075",
+      "title": "Fact, Fiction, and Momentum Investing",
+      "authors": [
+        "Clifford Asness",
+        "Andrea Frazzini",
+        "Ronen Israel",
+        "Tobias Moskowitz"
+      ],
+      "year": 2014,
+      "journal": "The Journal of Portfolio Management",
+      "url": "https://doi.org/10.3905/jpm.2014.40.5.075",
+      "citations": 79,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.3905/jpm.2025.1.797",
+      "title": "Momentum Factor Investing: Evidence and Evolution",
+      "authors": [
+        "Guido Baltussen",
+        "M. Sipke Dom",
+        "Bart van Vliet",
+        "Milan Vidojevic"
+      ],
+      "year": 2025,
+      "journal": "The Journal of Portfolio Management",
+      "url": "https://doi.org/10.3905/jpm.2025.1.797",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jbankfin.2018.11.008",
+      "title": "Asset growth, style investing, and momentum",
+      "authors": [
+        "Pin-Huang Chou",
+        "Kuan-Cheng Ko",
+        "Nien-Tzu Yang"
+      ],
+      "year": 2019,
+      "journal": "Journal of Banking &amp; Finance",
+      "url": "https://doi.org/10.1016/j.jbankfin.2018.11.008",
+      "citations": 17,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.32996/jefas.2023.5.1.8",
+      "title": "Understanding Momentum and Reversal Investing Strategies",
+      "authors": [
+        "Jinsui Huang",
+        "Peiying Zhang",
+        "Junbin Zhang"
+      ],
+      "year": 2023,
+      "journal": "Journal of Economics, Finance and Accounting Studies",
+      "url": "https://doi.org/10.32996/jefas.2023.5.1.8",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.finmar.2022.100755",
+      "title": "Investor sentiment, style investing, and momentum",
+      "authors": [
+        "Samar Ashour",
+        "Grace Qing Hao",
+        "Adam Harper"
+      ],
+      "year": 2023,
+      "journal": "Journal of Financial Markets",
+      "url": "https://doi.org/10.1016/j.finmar.2022.100755",
+      "citations": 19,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.2469/cp.v1995.n5.10",
+      "title": "Growth Investing: Earnings Momentum and Delivered Growth",
+      "authors": [
+        "Warren E. Shaw"
+      ],
+      "year": 1995,
+      "journal": "AIMR Conference Proceedings",
+      "url": "https://doi.org/10.2469/cp.v1995.n5.10",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.21512/jafa.v5i1.432",
+      "title": "MOMENTUM INVESTING STRATEGY IN IDX: AN EXPERIMENT",
+      "authors": [
+        "Ronald W. Liem"
+      ],
+      "year": 2012,
+      "journal": "Journal of Applied Finance &amp; Accounting",
+      "url": "https://doi.org/10.21512/jafa.v5i1.432",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1467-629x.2007.00227.x",
+      "title": "Momentum investing and the asset allocation decision",
+      "authors": [
+        "Karen L. Benson",
+        "David R. Gallagher",
+        "Patrick Teodorowski"
+      ],
+      "year": 2007,
+      "journal": "Accounting &amp; Finance",
+      "url": "https://doi.org/10.1111/j.1467-629x.2007.00227.x",
+      "citations": 8,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.finmar.2017.07.001",
+      "title": "Evolution of historical prices in momentum investing",
+      "authors": [
+        "Li-Wen Chen",
+        "Hsin-Yi Yu",
+        "Wen-Kai Wang"
+      ],
+      "year": 2018,
+      "journal": "Journal of Financial Markets",
+      "url": "https://doi.org/10.1016/j.finmar.2017.07.001",
+      "citations": 8,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.61190/fsr.v18i4.4956",
+      "title": "Can individual investors duplicate professional momentum investing?",
+      "authors": [
+        "Glenn N. Pettengill",
+        "Susan M. Edwards",
+        "Frank T. Griggs"
+      ],
+      "year": 2009,
+      "journal": "Financial Services Review",
+      "url": "https://doi.org/10.61190/fsr.v18i4.4956",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3614509",
+      "title": "Does Momentum Investing Work in Indian Equities?",
+      "authors": [
+        "Anoop Vijaykumar"
+      ],
+      "year": 2020,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3614509",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1057/s41260-024-00352-5",
+      "title": "Core-satellite investing with commodity futures momentum",
+      "authors": [
+        "Immo Stadtmüller",
+        "Benjamin R. Auer",
+        "Frank Schuhmacher"
+      ],
+      "year": 2024,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/s41260-024-00352-5",
+      "citations": 1,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1540-6261.2004.00695.x",
+      "title": "The 52‐Week High and Momentum Investing",
+      "authors": [
+        "THOMAS J. GEORGE",
+        "CHUAN‐YANG HWANG"
+      ],
+      "year": 2004,
+      "journal": "The Journal of Finance",
+      "url": "https://doi.org/10.1111/j.1540-6261.2004.00695.x",
+      "citations": 694,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.52783/jier.v4i3.1866",
+      "title": "Comparative Analysis of Value Investing with Momentum Investing and Mi Evergreen Smallcase Investing on Indian Index",
+      "authors": [
+        "Amit Bathia"
+      ],
+      "year": 2024,
+      "journal": "Journal of Informatics Education and Research",
+      "url": "https://doi.org/10.52783/jier.v4i3.1866",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/acfi.12462",
+      "title": "The fundamentals of momentum investing: European evidence on understanding momentum through fundamentals",
+      "authors": [
+        "Christian Walkshäusl"
+      ],
+      "year": 2019,
+      "journal": "Accounting &amp; Finance",
+      "url": "https://doi.org/10.1111/acfi.12462",
+      "citations": 16,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.3905/pa.2015.2.3.086",
+      "title": "Practical Applications of Fact, Fiction, and Momentum Investing",
+      "authors": [
+        "Clifford Asness",
+        "Andrea Frazzini",
+        "Ronen Israel",
+        "Tobias Moskowitz"
+      ],
+      "year": 2015,
+      "journal": "Practical Applications",
+      "url": "https://doi.org/10.3905/pa.2015.2.3.086",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1108/ejmbe-02-2021-0057",
+      "title": "Momentum investing: evidence from the US tourism and hospitality",
+      "authors": [
+        "Mohamed Shaker Ahmed"
+      ],
+      "year": 2021,
+      "journal": "European Journal of Management and Business Economics",
+      "url": "https://doi.org/10.1108/ejmbe-02-2021-0057",
+      "citations": 2,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1540-6288.2012.00343.x",
+      "title": "Order Imbalance and Daily Momentum Investing: Evidence from Taiwan",
+      "authors": [
+        "Chiao‐Yi Chang"
+      ],
+      "year": 2012,
+      "journal": "Financial Review",
+      "url": "https://doi.org/10.1111/j.1540-6288.2012.00343.x",
+      "citations": 8,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1080/09603107.2010.522517",
+      "title": "Momentum strategy and institutional investing in Taiwan stock market",
+      "authors": [
+        "Ching-Ping Wang",
+        "Hung-Hsi Huang",
+        "Wei-Li Lin"
+      ],
+      "year": 2010,
+      "journal": "Applied Financial Economics",
+      "url": "https://doi.org/10.1080/09603107.2010.522517",
+      "citations": 4,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1080/02522667.2012.10700144",
+      "title": "Investing in America’s High-Tech Industry: Contrarian versus Momentum",
+      "authors": [
+        "Pai-Lung Chou",
+        "Chiung-Wen Kang",
+        "Yun-Ching Mao"
+      ],
+      "year": 2012,
+      "journal": "Journal of Information and Optimization Sciences",
+      "url": "https://doi.org/10.1080/02522667.2012.10700144",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1007/s11301-020-00205-6",
+      "title": "Momentum investing: a systematic literature review and bibliometric analysis",
+      "authors": [
+        "Simarjeet Singh",
+        "Nidhi Walia"
+      ],
+      "year": 2020,
+      "journal": "Management Review Quarterly",
+      "url": "https://doi.org/10.1007/s11301-020-00205-6",
+      "citations": 30,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1007/s10258-017-0132-2",
+      "title": "Momentum meets value investing in a small European market",
+      "authors": [
+        "Júlio Lobão",
+        "Marcos Azeredo"
+      ],
+      "year": 2017,
+      "journal": "Portuguese Economic Journal",
+      "url": "https://doi.org/10.1007/s10258-017-0132-2",
+      "citations": 3,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/inr.12340",
+      "title": "Investing in the health workforce–keeping up the momentum",
+      "authors": [
+        "Judith Shamian"
+      ],
+      "year": 2016,
+      "journal": "International Nursing Review",
+      "url": "https://doi.org/10.1111/inr.12340",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.22495/bprv1i1p3",
+      "title": "Profitability of momentum investing strategies in an emerging market",
+      "authors": [
+        "Adedeji Ajadi"
+      ],
+      "year": 2023,
+      "journal": "Business Performance Review",
+      "url": "https://doi.org/10.22495/bprv1i1p3",
+      "citations": 2,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.61190/fsr.v15i3.4857",
+      "title": "Is momentum investing a viable strategy for individual investors?",
+      "authors": [
+        "Glenn N. Pettengill",
+        "Susan M. Edwards",
+        "Dennis E. Schmitt"
+      ],
+      "year": 2006,
+      "journal": "Financial Services Review",
+      "url": "https://doi.org/10.61190/fsr.v15i3.4857",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1111/1468-5957.00287",
+      "title": "<i>Discussion</i> of the Profitability of Momentum Investing",
+      "authors": [
+        "Richard Taffler"
+      ],
+      "year": 1999,
+      "journal": "Journal of Business Finance &amp; Accounting",
+      "url": "https://doi.org/10.1111/1468-5957.00287",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.3905/joi.2012.21.1.068",
+      "title": "Investing with Momentum: <i>The Past, Present, and Future</i>",
+      "authors": [
+        "John B. Guerard",
+        "Ganlin Xu",
+        "Mustafa Gültekin"
+      ],
+      "year": 2012,
+      "journal": "The Journal of Investing",
+      "url": "https://doi.org/10.3905/joi.2012.21.1.068",
+      "citations": 46,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.14421/ekbis.2024.8.1.2163",
+      "title": "Trend and Momentum Technical Indicators for Investing in Market Indices",
+      "authors": [
+        "Victor Alexandre Padilha",
+        "Vinícius Magnani",
+        "Rafael Confetti Gatsios",
+        "Fabiano Guasti Lima",
+        "Rafael Moreira Antonio"
+      ],
+      "year": 2024,
+      "journal": "EkBis: Jurnal Ekonomi dan Bisnis",
+      "url": "https://doi.org/10.14421/ekbis.2024.8.1.2163",
+      "citations": 2,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2610571",
+      "title": "The Formation Process of Winners and Losers in Momentum Investing",
+      "authors": [
+        "Li-Wen Chen",
+        "Wen-Kai Wang",
+        "Hsin-Yi Yu"
+      ],
+      "year": 2015,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2610571",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.32479/ijeep.14342",
+      "title": "Momentum in Low Carbon and Fossil Fuel Free Equity Investing",
+      "authors": [
+        "Ikhlaas Gurrib"
+      ],
+      "year": 2023,
+      "journal": "International Journal of Energy Economics and Policy",
+      "url": "https://doi.org/10.32479/ijeep.14342",
+      "citations": 2,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.54254/2754-1169/2025.bl24176",
+      "title": "Momentum Investing: A Comparison of Machine  Learning and Markowitz Theory",
+      "authors": [
+        "Junqin Yan"
+      ],
+      "year": 2025,
+      "journal": "Advances in Economics, Management and Political Sciences",
+      "url": "https://doi.org/10.54254/2754-1169/2025.bl24176",
+      "citations": 0,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.1080/1351847x.2020.1782959",
+      "title": "Cultural dimensions, economic policy uncertainty, and momentum investing: international evidence",
+      "authors": [
+        "Emilios Galariotis",
+        "Konstantinos Karagiannis"
+      ],
+      "year": 2020,
+      "journal": "The European Journal of Finance",
+      "url": "https://doi.org/10.1080/1351847x.2020.1782959",
+      "citations": 39,
+      "topics": [
+        "momentum investing"
+      ]
+    },
+    {
+      "doi": "10.3905/jod.1999.319120",
+      "title": "Pricing Parisan Options",
+      "authors": [
+        "Richard J. Haber",
+        "Phillip J. Schönbucher",
+        "Paul Wilmott"
+      ],
+      "year": 1999,
+      "journal": "The Journal of Derivatives",
+      "url": "https://doi.org/10.3905/jod.1999.319120",
+      "citations": 68,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.21314/jcf.2011.228",
+      "title": "Pricing timer options",
+      "authors": [
+        "Carole Bernard",
+        "Zhenyu Cui"
+      ],
+      "year": 2011,
+      "journal": "The Journal of Computational Finance",
+      "url": "https://doi.org/10.21314/jcf.2011.228",
+      "citations": 36,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.3233/af-150050",
+      "title": "Pricing complexity options",
+      "authors": [
+        "Malihe Alikhani",
+        "Bjørn Kjos-Hanssen",
+        "Amirarsalan Pakravan",
+        "Babak Saadat"
+      ],
+      "year": 2015,
+      "journal": "Algorithmic Finance",
+      "url": "https://doi.org/10.3233/af-150050",
+      "citations": 1,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1017/s0269964800143037",
+      "title": "PRICING EXOTIC OPTIONS",
+      "authors": [
+        "Sheldon M. Ross",
+        "J. George Shanthikumar"
+      ],
+      "year": 2000,
+      "journal": "Probability in the Engineering and Informational Sciences",
+      "url": "https://doi.org/10.1017/s0269964800143037",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.4236/tel.2018.811148",
+      "title": "Pricing Currency Call Options",
+      "authors": [
+        "Rebecca Abraham"
+      ],
+      "year": 2018,
+      "journal": "Theoretical Economics Letters",
+      "url": "https://doi.org/10.4236/tel.2018.811148",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2979634",
+      "title": "Pricing of American Options.",
+      "authors": [
+        "Ilya I. Gikhman"
+      ],
+      "year": 2017,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2979634",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/14697680500039142",
+      "title": "Pricing equity options everywhere",
+      "authors": [
+        "S. Dyrting"
+      ],
+      "year": 2004,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697680500039142",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2022.2138775",
+      "title": "Pricing commodity index options",
+      "authors": [
+        "Alberto Pedro Manzano-Herrero",
+        "Emanuele Nastasi",
+        "Andrea Pallavicini",
+        "Carlos Vázquez"
+      ],
+      "year": 2022,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2022.2138775",
+      "citations": 1,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1142/s0219024998000023",
+      "title": "Pricing Risky Options Simply",
+      "authors": [
+        "Erik Aurell",
+        "Sergei I. Simdyankin"
+      ],
+      "year": 1998,
+      "journal": "International Journal of Theoretical and Applied Finance",
+      "url": "https://doi.org/10.1142/s0219024998000023",
+      "citations": 15,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1002/fut.3990110109",
+      "title": "Pricing cross‐currency options",
+      "authors": [
+        "John Rumsey"
+      ],
+      "year": 1991,
+      "journal": "Journal of Futures Markets",
+      "url": "https://doi.org/10.1002/fut.3990110109",
+      "citations": 11,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.5089/9798229050074.029",
+      "title": "Cambodia: Carbon Pricing Options",
+      "authors": [
+        ""
+      ],
+      "year": 2026,
+      "journal": "High-Level Summary Technical Assistance Reports",
+      "url": "https://doi.org/10.5089/9798229050074.029",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.3905/jod.1995.407939",
+      "title": "On Pricing Barrier Options",
+      "authors": [
+        "Peter Ritchken"
+      ],
+      "year": 1995,
+      "journal": "The Journal of Derivatives",
+      "url": "https://doi.org/10.3905/jod.1995.407939",
+      "citations": 142,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.tre.2006.03.005",
+      "title": "Pricing freight rate options",
+      "authors": [
+        "Steen Koekebakker",
+        "Roar Adland",
+        "Sigbjørn Sødal"
+      ],
+      "year": 2007,
+      "journal": "Transportation Research Part E: Logistics and Transportation Review",
+      "url": "https://doi.org/10.1016/j.tre.2006.03.005",
+      "citations": 45,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.3390/ijfs11010051",
+      "title": "Pricing Multidimensional American Options",
+      "authors": [
+        "Elettra Agliardi",
+        "Rossella Agliardi"
+      ],
+      "year": 2023,
+      "journal": "International Journal of Financial Studies",
+      "url": "https://doi.org/10.3390/ijfs11010051",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1016/s1874-8651(10)60083-x",
+      "title": "Pricing Rainbow Asian Options",
+      "authors": [
+        "Bin PENG",
+        "Fei PENG"
+      ],
+      "year": 2009,
+      "journal": "Systems Engineering - Theory &amp; Practice",
+      "url": "https://doi.org/10.1016/s1874-8651(10)60083-x",
+      "citations": 6,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3524802",
+      "title": "Pricing commodity swing options",
+      "authors": [
+        "Roberto Daluiso",
+        "Emanuele Nastasi",
+        "Andrea Pallavicini",
+        "Giulio Sartorelli"
+      ],
+      "year": 2020,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3524802",
+      "citations": 4,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/13504860701798283",
+      "title": "Pricing Options on Defaultable Stocks*",
+      "authors": [
+        "E. Bayraktar"
+      ],
+      "year": 2008,
+      "journal": "Applied Mathematical Finance",
+      "url": "https://doi.org/10.1080/13504860701798283",
+      "citations": 7,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.najef.2025.102409",
+      "title": "Pricing of American timer options",
+      "authors": [
+        "Mijin Ha",
+        "Sangmin Park",
+        "Ji-Hun Yoon",
+        "Donghyun Kim"
+      ],
+      "year": 2025,
+      "journal": "The North American Journal of Economics and Finance",
+      "url": "https://doi.org/10.1016/j.najef.2025.102409",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1002/fut.21590",
+      "title": "Pricing Multiasset Cross‐Currency Options",
+      "authors": [
+        "Kenichiro Shiraya",
+        "Akihiko Takahashi"
+      ],
+      "year": 2012,
+      "journal": "Journal of Futures Markets",
+      "url": "https://doi.org/10.1002/fut.21590",
+      "citations": 22,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1109/mmm.2007.907097",
+      "title": "Options Pricing Theoty [Wireless Investor]",
+      "authors": [
+        "Peter Blakey"
+      ],
+      "year": 2007,
+      "journal": "IEEE Microwave Magazine",
+      "url": "https://doi.org/10.1109/mmm.2007.907097",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.2307/4126759",
+      "title": "Pricing Bounds on Asian Options",
+      "authors": [
+        "J. Aase Nielsen",
+        "Klaus Sandmann"
+      ],
+      "year": 2003,
+      "journal": "The Journal of Financial and Quantitative Analysis",
+      "url": "https://doi.org/10.2307/4126759",
+      "citations": 83,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1137/s0036144503424798",
+      "title": "Pricing and Hedging Spread Options",
+      "authors": [
+        "René Carmona",
+        "Valdo Durrleman"
+      ],
+      "year": 2003,
+      "journal": "SIAM Review",
+      "url": "https://doi.org/10.1137/s0036144503424798",
+      "citations": 253,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/14697680902785292",
+      "title": "Pseudospectral methods for pricing options",
+      "authors": [
+        "Sangwon Suh"
+      ],
+      "year": 2009,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697680902785292",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1007/s11147-011-9073-6",
+      "title": "Analytical pricing of American options",
+      "authors": [
+        "Jun Cheng",
+        "Jin E. Zhang"
+      ],
+      "year": 2012,
+      "journal": "Review of Derivatives Research",
+      "url": "https://doi.org/10.1007/s11147-011-9073-6",
+      "citations": 6,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.chaos.2022.111833",
+      "title": "Pricing discounted American capped options",
+      "authors": [
+        "Tsvetelin S. Zaevski"
+      ],
+      "year": 2022,
+      "journal": "Chaos, Solitons &amp; Fractals",
+      "url": "https://doi.org/10.1016/j.chaos.2022.111833",
+      "citations": 6,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.1495088",
+      "title": "Pricing Average Options on Commodities",
+      "authors": [
+        "Kenichiro Shiraya",
+        "Akihiko Takahashi"
+      ],
+      "year": 2012,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.1495088",
+      "citations": 1,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.21314/jcf.2002.083",
+      "title": "Pricing moving average barrier options",
+      "authors": [
+        "J Heritage"
+      ],
+      "year": 2002,
+      "journal": "The Journal of Computational Finance",
+      "url": "https://doi.org/10.21314/jcf.2002.083",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.54691/bcpbm.v25i.1909",
+      "title": "Options Pricing and Trading Strategies",
+      "authors": [
+        "Lun Hai"
+      ],
+      "year": 2022,
+      "journal": "BCP Business &amp; Management",
+      "url": "https://doi.org/10.54691/bcpbm.v25i.1909",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1093/imaman/dpab045",
+      "title": "Pricing double-barrier Parisian options",
+      "authors": [
+        "Chun-Yang Liu",
+        "Song-Ping Zhu",
+        "Shu-Hua Zhang"
+      ],
+      "year": 2022,
+      "journal": "IMA Journal of Management Mathematics",
+      "url": "https://doi.org/10.1093/imaman/dpab045",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/09603100701222267",
+      "title": "Pricing generalized capped exchange options",
+      "authors": [
+        "Chou-Wen Wang",
+        "Szu-Lang Liao",
+        "Ting-Yi Wu"
+      ],
+      "year": 2008,
+      "journal": "Applied Financial Economics",
+      "url": "https://doi.org/10.1080/09603100701222267",
+      "citations": 1,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1007/s10614-023-10469-1",
+      "title": "Pricing of Vulnerable Timer Options",
+      "authors": [
+        "Donghyun Kim",
+        "Mijin Ha",
+        "Sun-Yong Choi",
+        "Ji-Hun Yoon"
+      ],
+      "year": 2023,
+      "journal": "Computational Economics",
+      "url": "https://doi.org/10.1007/s10614-023-10469-1",
+      "citations": 2,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1002/asmb.2316",
+      "title": "Pricing and hedging barrier options",
+      "authors": [
+        "Estevão Rosalino",
+        "Allan J. da Silva",
+        "Jack Baczynski",
+        "Dorival Leão"
+      ],
+      "year": 2018,
+      "journal": "Applied Stochastic Models in Business and Industry",
+      "url": "https://doi.org/10.1002/asmb.2316",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.17016/feds.2023.053",
+      "title": "The Pricing Kernel in Options",
+      "authors": [
+        "Steven Heston",
+        "Kris Jacobs",
+        "Hyung Joo Kim"
+      ],
+      "year": 2023,
+      "journal": "Finance and Economics Discussion Series",
+      "url": "https://doi.org/10.17016/feds.2023.053",
+      "citations": 3,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.3138/cpp.39.supplement2.s109",
+      "title": "Carbon Pricing Options for Canada",
+      "authors": [
+        "Stephan Schott"
+      ],
+      "year": 2013,
+      "journal": "Canadian Public Policy",
+      "url": "https://doi.org/10.3138/cpp.39.supplement2.s109",
+      "citations": 6,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.4134/ckms.2016.31.1.199",
+      "title": "PRICING OF QUANTO CHAINED OPTIONS",
+      "authors": [
+        "Geonwoo Kim"
+      ],
+      "year": 2016,
+      "journal": "Communications of the Korean Mathematical Society",
+      "url": "https://doi.org/10.4134/ckms.2016.31.1.199",
+      "citations": 0,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1007/s00780-005-0155-x",
+      "title": "Pricing options on realized variance",
+      "authors": [
+        "Peter Carr",
+        "Hélyette Geman",
+        "Dilip B. Madan",
+        "Marc Yor"
+      ],
+      "year": 2005,
+      "journal": "Finance and Stochastics",
+      "url": "https://doi.org/10.1007/s00780-005-0155-x",
+      "citations": 110,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1002/fut.3990090105",
+      "title": "Pricing and hedging capped options",
+      "authors": [
+        "Phelim P. Boyle",
+        "Stuart M. Turnbull"
+      ],
+      "year": 1989,
+      "journal": "Journal of Futures Markets",
+      "url": "https://doi.org/10.1002/fut.3990090105",
+      "citations": 22,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1002/fut.20481",
+      "title": "Pricing average options on commodities",
+      "authors": [
+        "Kenichiro Shiraya",
+        "Akihiko Takahashi"
+      ],
+      "year": 2010,
+      "journal": "Journal of Futures Markets",
+      "url": "https://doi.org/10.1002/fut.20481",
+      "citations": 32,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.3905/jod.2015.23.2.053",
+      "title": "Pricing Bounds on Quanto Options",
+      "authors": [
+        "Yukihiro Tsuzuki"
+      ],
+      "year": 2015,
+      "journal": "The Journal of Derivatives",
+      "url": "https://doi.org/10.3905/jod.2015.23.2.053",
+      "citations": 1,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.21314/jcf.2000.048",
+      "title": "Pricing discretely monitored barrier options",
+      "authors": [
+        "Michael Sullivan"
+      ],
+      "year": 2000,
+      "journal": "The Journal of Computational Finance",
+      "url": "https://doi.org/10.21314/jcf.2000.048",
+      "citations": 16,
+      "topics": [
+        "options pricing"
+      ]
+    },
+    {
+      "doi": "10.1108/14635781011020029",
+      "title": "Portfolio optimisation and bootstrapping",
+      "authors": [
+        "Rahul Srivatsa",
+        "Andrew Smith",
+        "Jon Lekander"
+      ],
+      "year": 2010,
+      "journal": "Journal of Property Investment &amp; Finance",
+      "url": "https://doi.org/10.1108/14635781011020029",
+      "citations": 4,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1057/s41260-023-00322-3",
+      "title": "Large portfolio optimisation approaches",
+      "authors": [
+        "Esra Ulasan",
+        "A. Özlem Önder"
+      ],
+      "year": 2023,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/s41260-023-00322-3",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1080/2058802x.2020.1846318",
+      "title": "Portfolio Optimisation in Uniper",
+      "authors": [
+        "Colin Silvester"
+      ],
+      "year": 2021,
+      "journal": "Impact",
+      "url": "https://doi.org/10.1080/2058802x.2020.1846318",
+      "citations": 1,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1108/14635780310481667",
+      "title": "Time weighted portfolio optimisation",
+      "authors": [
+        "Stephen Lee",
+        "Simon Stevenson"
+      ],
+      "year": 2003,
+      "journal": "Journal of Property Investment &amp; Finance",
+      "url": "https://doi.org/10.1108/14635780310481667",
+      "citations": 6,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1007/s11579-025-00411-4",
+      "title": "Adaptive-Robust Portfolio Optimisation",
+      "authors": [
+        "Theerawat Bhudisaksang",
+        "Álvaro Cartea",
+        "Leandro Sánchez-Betancourt"
+      ],
+      "year": 2025,
+      "journal": "Mathematics and Financial Economics",
+      "url": "https://doi.org/10.1007/s11579-025-00411-4",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1057/palgrave.jam.2250082",
+      "title": "Portfolio optimisation and diversification",
+      "authors": [
+        "David King"
+      ],
+      "year": 2007,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/palgrave.jam.2250082",
+      "citations": 15,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3613600",
+      "title": "Deep Learning for Portfolio Optimisation",
+      "authors": [
+        "Zihao Zhang",
+        "Stefan Zohren",
+        "Stephen Roberts"
+      ],
+      "year": 2020,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3613600",
+      "citations": 24,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1007/s11579-012-0067-4",
+      "title": "Simplified mean-variance portfolio optimisation",
+      "authors": [
+        "Claudio Fontana",
+        "Martin Schweizer"
+      ],
+      "year": 2012,
+      "journal": "Mathematics and Financial Economics",
+      "url": "https://doi.org/10.1007/s11579-012-0067-4",
+      "citations": 12,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1016/j.eneco.2023.106831",
+      "title": "Does green improve portfolio optimisation?",
+      "authors": [
+        "Md Akhtaruzzaman",
+        "Ameet Kumar Banerjee",
+        "Sabri Boubaker",
+        "Faten Moussa"
+      ],
+      "year": 2023,
+      "journal": "Energy Economics",
+      "url": "https://doi.org/10.1016/j.eneco.2023.106831",
+      "citations": 60,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.22331/q-2021-07-28-513",
+      "title": "Quantum walk-based portfolio optimisation",
+      "authors": [
+        "N. Slate",
+        "E. Matwiejew",
+        "S. Marsh",
+        "J. B. Wang"
+      ],
+      "year": 2021,
+      "journal": "Quantum",
+      "url": "https://doi.org/10.22331/q-2021-07-28-513",
+      "citations": 53,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.3934/fmf.2026007",
+      "title": "Portfolio optimisation with European options",
+      "authors": [
+        "Jonathan Raimana Chan",
+        "Thomas Huckle",
+        "Antoine Jacquier",
+        "Aitor Muguruza"
+      ],
+      "year": 2026,
+      "journal": "Frontiers of Mathematical Finance",
+      "url": "https://doi.org/10.3934/fmf.2026007",
+      "citations": 1,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1057/jam.2008.20",
+      "title": "Inverse portfolio optimisation under constraints",
+      "authors": [
+        "Rudi Zagst",
+        "Michaela Pöschik"
+      ],
+      "year": 2008,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/jam.2008.20",
+      "citations": 10,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.3390/computers14070242",
+      "title": "Incremental Reinforcement Learning for Portfolio Optimisation",
+      "authors": [
+        "Refiloe Shabe",
+        "Andries Engelbrecht",
+        "Kian Anderson"
+      ],
+      "year": 2025,
+      "journal": "Computers",
+      "url": "https://doi.org/10.3390/computers14070242",
+      "citations": 3,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1016/j.frl.2024.105758",
+      "title": "Portfolio optimisation using alternative risk measures",
+      "authors": [
+        "Douglas Austen Lorimer",
+        "Cornelis Hendrik van Schalkwyk",
+        "Jan Jakub Szczygielski"
+      ],
+      "year": 2024,
+      "journal": "Finance Research Letters",
+      "url": "https://doi.org/10.1016/j.frl.2024.105758",
+      "citations": 6,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijguc.2014.058253",
+      "title": "An advanced system for portfolio optimisation",
+      "authors": [
+        "Patrizia Beraldi",
+        "Lucio Grandinetti",
+        "Italo Eipoco",
+        "Antonio Violi",
+        "Maria Elena Bruni"
+      ],
+      "year": 2014,
+      "journal": "International Journal of Grid and Utility Computing",
+      "url": "https://doi.org/10.1504/ijguc.2014.058253",
+      "citations": 2,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1093/rof/rfn028",
+      "title": "Robust Portfolio Optimisation with Multiple Experts",
+      "authors": [
+        "Frank Lutgens",
+        "Peter C. Schotman"
+      ],
+      "year": 2008,
+      "journal": "Review of Finance",
+      "url": "https://doi.org/10.1093/rof/rfn028",
+      "citations": 19,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1016/j.insmatheco.2020.05.010",
+      "title": "Expected utility approximation and portfolio optimisation",
+      "authors": [
+        "Matthias A. Fahrenwaldt",
+        "Chaofan Sun"
+      ],
+      "year": 2020,
+      "journal": "Insurance: Mathematics and Economics",
+      "url": "https://doi.org/10.1016/j.insmatheco.2020.05.010",
+      "citations": 7,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3744994",
+      "title": "Portfolio Optimisation within a Wasserstein Ball",
+      "authors": [
+        "Silvana M. Pesenti",
+        "Sebastian Jaimungal"
+      ],
+      "year": 2020,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3744994",
+      "citations": 7,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1007/s10614-015-9552-1",
+      "title": "The Portfolio Heuristic Optimisation System (PHOS)",
+      "authors": [
+        "N. Loukeris",
+        "I. Eleftheriadis",
+        "E. Livanis"
+      ],
+      "year": 2016,
+      "journal": "Computational Economics",
+      "url": "https://doi.org/10.1007/s10614-015-9552-1",
+      "citations": 3,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1007/s10614-024-10733-y",
+      "title": "Robust Portfolio Optimisation Under Sparse Contamination",
+      "authors": [
+        "Carlo E. Autiero",
+        "Alessio Farcomeni"
+      ],
+      "year": 2024,
+      "journal": "Computational Economics",
+      "url": "https://doi.org/10.1007/s10614-024-10733-y",
+      "citations": 1,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1057/s41260-017-0066-3",
+      "title": "Portfolio optimisation in an uncertain world",
+      "authors": [
+        "Marielle de Jong"
+      ],
+      "year": 2017,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/s41260-017-0066-3",
+      "citations": 14,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijpd.2009.022277",
+      "title": "Product semantics and wine portfolio optimisation",
+      "authors": [
+        "Erin MacDonald",
+        "Alexis Lubensky",
+        "Bryon Sohns",
+        "Panos Y. Papalambros"
+      ],
+      "year": 2009,
+      "journal": "International Journal of Product Development",
+      "url": "https://doi.org/10.1504/ijpd.2009.022277",
+      "citations": 13,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.69554/zfju5571",
+      "title": "ESG information integration into portfolio optimisation",
+      "authors": [
+        "Haoming Cao",
+        "Tony S. Wirjanto"
+      ],
+      "year": 2023,
+      "journal": "Journal of Risk Management in Financial Institutions",
+      "url": "https://doi.org/10.69554/zfju5571",
+      "citations": 3,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijbir.2025.146036",
+      "title": "Portfolio optimisation in global equity markets",
+      "authors": [
+        "Mrityunjay Kumar Tiwary",
+        "Vaibhav Aggarwal"
+      ],
+      "year": 2025,
+      "journal": "International Journal of Business Innovation and Research",
+      "url": "https://doi.org/10.1504/ijbir.2025.146036",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1016/s0305-0548(99)00074-x",
+      "title": "Heuristics for cardinality constrained portfolio optimisation",
+      "authors": [
+        "T.-J. Chang",
+        "N. Meade",
+        "J.E. Beasley",
+        "Y.M. Sharaiha"
+      ],
+      "year": 2000,
+      "journal": "Computers &amp; Operations Research",
+      "url": "https://doi.org/10.1016/s0305-0548(99)00074-x",
+      "citations": 708,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijbcrm.2018.094175",
+      "title": "PSO-3P for the portfolio optimisation problem",
+      "authors": [
+        "José Carlos Javier Velasco",
+        "Sergio Gerardo De los Cobos Silva",
+        "Eric Alfredo Rincón García",
+        "Miguel Ángel Gutiérrez Andrade",
+        "Roman Anselmo Mora Gutiérrez",
+        "Antonin Ponsich",
+        "Pedro Lara Velázquez"
+      ],
+      "year": 2018,
+      "journal": "International Journal of Business Continuity and Risk Management",
+      "url": "https://doi.org/10.1504/ijbcrm.2018.094175",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijferm.2018.094043",
+      "title": "Machine learning, economic regimes and portfolio optimisation",
+      "authors": [
+        "John M. Mulvey",
+        "Han Hao",
+        "Nongchao Li"
+      ],
+      "year": 2018,
+      "journal": "International Journal of Financial Engineering and Risk Management",
+      "url": "https://doi.org/10.1504/ijferm.2018.094043",
+      "citations": 5,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijferm.2018.094030",
+      "title": "Multi-period portfolio optimisation with alpha decay",
+      "authors": [
+        "Kartik Sivaramakrishnan",
+        "Vishv Jeet",
+        "Dieter Vandenbussche"
+      ],
+      "year": 2018,
+      "journal": "International Journal of Financial Engineering and Risk Management",
+      "url": "https://doi.org/10.1504/ijferm.2018.094030",
+      "citations": 1,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1080/24754269.2017.1347310",
+      "title": "Portfolio optimisation using constrained hierarchical bayes models",
+      "authors": [
+        "Jiangyong Yin",
+        "Xinyi Xu"
+      ],
+      "year": 2017,
+      "journal": "Statistical Theory and Related Fields",
+      "url": "https://doi.org/10.1080/24754269.2017.1347310",
+      "citations": 2,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1007/s00780-025-00566-4",
+      "title": "Portfolio optimisation via strategy-specific eigenvector shrinkage",
+      "authors": [
+        "Lisa R. Goldberg",
+        "Hubeyb Gurdogan",
+        "Alec Kercheval"
+      ],
+      "year": 2025,
+      "journal": "Finance and Stochastics",
+      "url": "https://doi.org/10.1007/s00780-025-00566-4",
+      "citations": 3,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1057/jam.2008.16",
+      "title": "Portfolio optimisation: A fuzzy multi-objective approach",
+      "authors": [
+        "Francesc J Ortí",
+        "José B Sáez"
+      ],
+      "year": 2008,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/jam.2008.16",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jempfin.2018.05.002",
+      "title": "Portfolio optimisation under flexible dynamic dependence modelling",
+      "authors": [
+        "Mauro Bernardi",
+        "Leopoldo Catania"
+      ],
+      "year": 2018,
+      "journal": "Journal of Empirical Finance",
+      "url": "https://doi.org/10.1016/j.jempfin.2018.05.002",
+      "citations": 16,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijferm.2025.10074188",
+      "title": "Portfolio Optimisation in Modular Neural and Hybrid Models",
+      "authors": [
+        "Nikolaos Loukeris",
+        "G. Gikas"
+      ],
+      "year": 2025,
+      "journal": "International Journal of Financial Engineering and Risk Management",
+      "url": "https://doi.org/10.1504/ijferm.2025.10074188",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.14419/nfmybb32",
+      "title": "Mapping portfolio optimisation: a systematic and bibliometric review",
+      "authors": [
+        "Preeti Bai Agrawal",
+        "Dr. Anuradha Samal"
+      ],
+      "year": 2024,
+      "journal": "Global Journal of Mathematical Analysis",
+      "url": "https://doi.org/10.14419/nfmybb32",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1080/15228916.2019.1625018",
+      "title": "Behavioural Portfolio Selection and Optimisation: Equities versus Cryptocurrencies",
+      "authors": [
+        "Kofi Agyarko Ababio"
+      ],
+      "year": 2019,
+      "journal": "Journal of African Business",
+      "url": "https://doi.org/10.1080/15228916.2019.1625018",
+      "citations": 11,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.54946/wilm.12057",
+      "title": "Stocks and Options Portfolio Optimisation With Reinforcement Learning",
+      "authors": [
+        "Daniel Bloch"
+      ],
+      "year": 2024,
+      "journal": "Wilmott",
+      "url": "https://doi.org/10.54946/wilm.12057",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijse.2026.10069962",
+      "title": "Interconnectedness and portfolio optimisation across global ESG stocks",
+      "authors": [
+        "Chanchal Saini",
+        "Bhawana Verma",
+        "Ishwar Sharma",
+        "Bharti Verma"
+      ],
+      "year": 2026,
+      "journal": "International Journal of Sustainable Economy",
+      "url": "https://doi.org/10.1504/ijse.2026.10069962",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1214/15-aap1136",
+      "title": "Duality theory for portfolio optimisation under transaction costs",
+      "authors": [
+        "Christoph Czichowsky",
+        "Walter Schachermayer"
+      ],
+      "year": 2016,
+      "journal": "The Annals of Applied Probability",
+      "url": "https://doi.org/10.1214/15-aap1136",
+      "citations": 38,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.19030/iber.v8i1.3096",
+      "title": "Sector Analysis And Portfolio Optimisation: The Indian Experience",
+      "authors": [
+        "Rakesh Gupta",
+        "Parikshit K. Basu"
+      ],
+      "year": 2011,
+      "journal": "International Business &amp; Economics Research Journal (IBER)",
+      "url": "https://doi.org/10.19030/iber.v8i1.3096",
+      "citations": 4,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1504/ijse.2026.152800",
+      "title": "Interconnectedness and portfolio optimisation across global ESG stocks",
+      "authors": [
+        "Ishwar Sharma",
+        "Bhawana Verma",
+        "Chanchal Saini",
+        "Bharti Verma"
+      ],
+      "year": 2026,
+      "journal": "International Journal of Sustainable Economy",
+      "url": "https://doi.org/10.1504/ijse.2026.152800",
+      "citations": 0,
+      "topics": [
+        "portfolio optimisation"
+      ]
+    },
+    {
+      "doi": "10.1016/j.spl.2005.05.015",
+      "title": "Forecasting volatility",
+      "authors": [
+        "A. Thavaneswaran",
+        "S.S. Appadoo",
+        "S. Peiris"
+      ],
+      "year": 2005,
+      "journal": "Statistics &amp; Probability Letters",
+      "url": "https://doi.org/10.1016/j.spl.2005.05.015",
+      "citations": 10,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1002/for.993",
+      "title": "Forecasting volatility",
+      "authors": [
+        "Nikolay Gospodinov",
+        "Athanasia Gavala",
+        "Deming Jiang"
+      ],
+      "year": 2006,
+      "journal": "Journal of Forecasting",
+      "url": "https://doi.org/10.1002/for.993",
+      "citations": 39,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1111/1468-0416.00009",
+      "title": "Forecasting Volatility",
+      "authors": [
+        "Stephen Figlewski"
+      ],
+      "year": 1997,
+      "journal": "Financial Markets, Institutions &amp; Instruments",
+      "url": "https://doi.org/10.1111/1468-0416.00009",
+      "citations": 246,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1002/fut.20146",
+      "title": "Forecasting volatility",
+      "authors": [
+        "Louis H. Ederington",
+        "Wei Guan"
+      ],
+      "year": 2005,
+      "journal": "Journal of Futures Markets",
+      "url": "https://doi.org/10.1002/fut.20146",
+      "citations": 42,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.4158925",
+      "title": "Volatility Forecasting for Low-Volatility Investing",
+      "authors": [
+        "Christian Conrad",
+        "Onno Kleen"
+      ],
+      "year": 2022,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.4158925",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1002/for.3170",
+      "title": "Functional volatility forecasting",
+      "authors": [
+        "Yingwen Tan",
+        "Zhensi Tan",
+        "Yinfen Tang",
+        "Zhiyuan Zhang"
+      ],
+      "year": 2024,
+      "journal": "Journal of Forecasting",
+      "url": "https://doi.org/10.1002/for.3170",
+      "citations": 5,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.ijforecast.2025.08.006",
+      "title": "Volatility forecasting for low-volatility investing",
+      "authors": [
+        "Christian Conrad",
+        "Onno Kleen",
+        "Rasmus Lönn"
+      ],
+      "year": 2026,
+      "journal": "International Journal of Forecasting",
+      "url": "https://doi.org/10.1016/j.ijforecast.2025.08.006",
+      "citations": 1,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1287/mnsc.2023.01520",
+      "title": "Automated Volatility Forecasting",
+      "authors": [
+        "Sophia Zhengzi Li",
+        "Yushan Tang"
+      ],
+      "year": 2025,
+      "journal": "Management Science",
+      "url": "https://doi.org/10.1287/mnsc.2023.01520",
+      "citations": 18,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.3905/jot.2018.13.4.010",
+      "title": "COMMENTARY: Volatility Forecasting",
+      "authors": [
+        "Haim A. Mozes",
+        "John Launny Steffens"
+      ],
+      "year": 2018,
+      "journal": "The Journal of Trading",
+      "url": "https://doi.org/10.3905/jot.2018.13.4.010",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.ijforecast.2021.06.005",
+      "title": "Forecasting cryptocurrency volatility",
+      "authors": [
+        "Leopoldo Catania",
+        "Stefano Grassi"
+      ],
+      "year": 2022,
+      "journal": "International Journal of Forecasting",
+      "url": "https://doi.org/10.1016/j.ijforecast.2021.06.005",
+      "citations": 66,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.4236/jamp.2015.31014",
+      "title": "Volatility Forecasting and Volatility Risk Premium",
+      "authors": [
+        "Jingfei Cheng"
+      ],
+      "year": 2015,
+      "journal": "Journal of Applied Mathematics and Physics",
+      "url": "https://doi.org/10.4236/jamp.2015.31014",
+      "citations": 1,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/s0304-4076(01)00069-0",
+      "title": "Forecasting multifractal volatility",
+      "authors": [
+        "Laurent Calvet",
+        "Adlai Fisher"
+      ],
+      "year": 2001,
+      "journal": "Journal of Econometrics",
+      "url": "https://doi.org/10.1016/s0304-4076(01)00069-0",
+      "citations": 200,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1080/00036846.2017.1363863",
+      "title": "Volatility forecasting: combinations of realized volatility measures and forecasting models",
+      "authors": [
+        "Linlan Xiao",
+        "Vigdis Boasson",
+        "Sergey Shishlenin",
+        "Victoria Makushina"
+      ],
+      "year": 2017,
+      "journal": "Applied Economics",
+      "url": "https://doi.org/10.1080/00036846.2017.1363863",
+      "citations": 6,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1108/17439131111109017",
+      "title": "Intraday volatility forecasting from implied volatility",
+      "authors": [
+        "Suk Joon Byun",
+        "Dong Woo Rhee",
+        "Sol Kim"
+      ],
+      "year": 2011,
+      "journal": "International Journal of Managerial Finance",
+      "url": "https://doi.org/10.1108/17439131111109017",
+      "citations": 4,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.497443",
+      "title": "A Stochastic Volatility Model, Volatility Smile and Forecasting Volatility",
+      "authors": [
+        "Bogdan Negrea"
+      ],
+      "year": 2004,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.497443",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.5351/ckss.2010.17.2.293",
+      "title": "Forecasting KOSPI 200 Volatility by Volatility Measurements",
+      "authors": [
+        "Young-Soo Choi",
+        "Hyun-Jung Lee"
+      ],
+      "year": 2010,
+      "journal": "Communications for Statistical Applications and Methods",
+      "url": "https://doi.org/10.5351/ckss.2010.17.2.293",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.3905/jod.1993.407876",
+      "title": "Forecasting Futures Market Volatility",
+      "authors": [
+        "Theodore E. Day",
+        "Craig M. Lewis"
+      ],
+      "year": 1993,
+      "journal": "The Journal of Derivatives",
+      "url": "https://doi.org/10.3905/jod.1993.407876",
+      "citations": 60,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2025.2454623",
+      "title": "Options-driven volatility forecasting",
+      "authors": [
+        "Nikolas Michael",
+        "Mihai Cucuringu",
+        "Sam Howison"
+      ],
+      "year": 2025,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2025.2454623",
+      "citations": 8,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.3905/jpm.2022.1.452",
+      "title": "Forecasting Stock Market Volatility",
+      "authors": [
+        "Michael Stamos"
+      ],
+      "year": 2022,
+      "journal": "The Journal of Portfolio Management",
+      "url": "https://doi.org/10.3905/jpm.2022.1.452",
+      "citations": 4,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.ribaf.2021.101540",
+      "title": "Forecasting volatility of Bitcoin",
+      "authors": [
+        "Lykke Øverland Bergsli",
+        "Andrea Falk Lind",
+        "Peter Molnár",
+        "Michał Polasik"
+      ],
+      "year": 2022,
+      "journal": "Research in International Business and Finance",
+      "url": "https://doi.org/10.1016/j.ribaf.2021.101540",
+      "citations": 66,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2596740",
+      "title": "Forecasting Coherent Volatility Breakouts",
+      "authors": [
+        "Alexander Didenko",
+        "Michael Dubovikov",
+        "Boris Poutko"
+      ],
+      "year": 2014,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2596740",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1093/jjfinec/nbag019",
+      "title": "Neural-Network Volatility Forecasting",
+      "authors": [
+        "Chen Liu",
+        "Minh-Ngoc Tran",
+        "Chao Wang",
+        "Richard Gerlach",
+        "Robert Kohn"
+      ],
+      "year": 2026,
+      "journal": "Journal of Financial Econometrics",
+      "url": "https://doi.org/10.1093/jjfinec/nbag019",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.knosys.2019.03.029",
+      "title": "Sentiment-aware volatility forecasting",
+      "authors": [
+        "Frank Z. Xing",
+        "Erik Cambria",
+        "Yue Zhang"
+      ],
+      "year": 2019,
+      "journal": "Knowledge-Based Systems",
+      "url": "https://doi.org/10.1016/j.knosys.2019.03.029",
+      "citations": 72,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.299502",
+      "title": "Implied GARCH Volatility Forecasting",
+      "authors": [
+        "Thorsten Lehnert",
+        "Cyriel de Jong"
+      ],
+      "year": 2002,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.299502",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1002/asmb.423",
+      "title": "Forecasting stock index volatility",
+      "authors": [
+        "Riccardo Bramante",
+        "Santamaria Luigi"
+      ],
+      "year": 2001,
+      "journal": "Applied Stochastic Models in Business and Industry",
+      "url": "https://doi.org/10.1002/asmb.423",
+      "citations": 2,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/s0165-1765(02)00036-8",
+      "title": "Forecasting exchange rate volatility",
+      "authors": [
+        "Jon Vilasuso"
+      ],
+      "year": 2002,
+      "journal": "Economics Letters",
+      "url": "https://doi.org/10.1016/s0165-1765(02)00036-8",
+      "citations": 75,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1002/for.70179",
+      "title": "Enhancing Neural Network Volatility Forecasting: Decomposed Volatility Modeling",
+      "authors": [
+        "Xuzheng Ren",
+        "Pengfan Sun",
+        "Haoren Zhu",
+        "Pengfei Zhao"
+      ],
+      "year": 2026,
+      "journal": "Journal of Forecasting",
+      "url": "https://doi.org/10.1002/for.70179",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1080/09603107.2014.924293",
+      "title": "Volatility forecasting performance of two-scale realized volatility",
+      "authors": [
+        "S. Garg",
+        "Vipul"
+      ],
+      "year": 2014,
+      "journal": "Applied Financial Economics",
+      "url": "https://doi.org/10.1080/09603107.2014.924293",
+      "citations": 3,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.ijforecast.2020.01.003",
+      "title": "Forecasting volatility with time-varying leverage and volatility of volatility effects",
+      "authors": [
+        "Leopoldo Catania",
+        "Tommaso Proietti"
+      ],
+      "year": 2020,
+      "journal": "International Journal of Forecasting",
+      "url": "https://doi.org/10.1016/j.ijforecast.2020.01.003",
+      "citations": 25,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3293904",
+      "title": "Forecasting Volatility with Time-Varying Leverage and Volatility of Volatility Effects",
+      "authors": [
+        "Leopoldo Catania",
+        "Tommaso Proietti"
+      ],
+      "year": 2018,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3293904",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3330048",
+      "title": "Forecasting Volatility with Time-Varying Leverage and Volatility of Volatility Effects",
+      "authors": [
+        "Leopoldo Catania",
+        "Tommaso Proietti"
+      ],
+      "year": 2019,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3330048",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1468-5957.1996.tb00407.x",
+      "title": "FORECASTING VOLATILITY FOR PORTFOLIO SELECTION",
+      "authors": [
+        "George A. Vasilellis",
+        "Nigel Meade"
+      ],
+      "year": 1996,
+      "journal": "Journal of Business Finance &amp; Accounting",
+      "url": "https://doi.org/10.1111/j.1468-5957.1996.tb00407.x",
+      "citations": 21,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1111/j.1468-0076.2006.00166.x",
+      "title": "Forecasting volatility for options valuation",
+      "authors": [
+        "Mahdjouba Belaifa",
+        "Kimio Morimune"
+      ],
+      "year": 2006,
+      "journal": "OPEC Review",
+      "url": "https://doi.org/10.1111/j.1468-0076.2006.00166.x",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/0378-4266(90)90056-8",
+      "title": "Volatility forecasting without data-snooping",
+      "authors": [
+        "Elroy Dimson",
+        "Paul Marsh"
+      ],
+      "year": 1990,
+      "journal": "Journal of Banking &amp; Finance",
+      "url": "https://doi.org/10.1016/0378-4266(90)90056-8",
+      "citations": 78,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jkss.2018.08.002",
+      "title": "Forecasting realized volatility: A review",
+      "authors": [
+        "Dong Wan Shin"
+      ],
+      "year": 2018,
+      "journal": "Journal of the Korean Statistical Society",
+      "url": "https://doi.org/10.1016/j.jkss.2018.08.002",
+      "citations": 10,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/0024-6301(95)91605-9",
+      "title": "Forecasting volatility in commodity markets",
+      "authors": [],
+      "year": 1995,
+      "journal": "Long Range Planning",
+      "url": "https://doi.org/10.1016/0024-6301(95)91605-9",
+      "citations": 0,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1002/for.841",
+      "title": "Volatility forecasting for risk management",
+      "authors": [
+        "Chris Brooks",
+        "Gita Persand"
+      ],
+      "year": 2002,
+      "journal": "Journal of Forecasting",
+      "url": "https://doi.org/10.1002/for.841",
+      "citations": 127,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1080/10293523.2008.11082496",
+      "title": "Forecasting volatility on the JSE",
+      "authors": [
+        "NL Samouilhan",
+        "G Shannon"
+      ],
+      "year": 2008,
+      "journal": "Investment Analysts Journal",
+      "url": "https://doi.org/10.1080/10293523.2008.11082496",
+      "citations": 9,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1007/s10436-020-00368-y",
+      "title": "Forecasting volatility in bitcoin market",
+      "authors": [
+        "Mawuli Segnon",
+        "Stelios Bekiros"
+      ],
+      "year": 2020,
+      "journal": "Annals of Finance",
+      "url": "https://doi.org/10.1007/s10436-020-00368-y",
+      "citations": 23,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.1016/j.ijforecast.2018.04.007",
+      "title": "Forecasting crude oil price volatility",
+      "authors": [
+        "Ana María Herrera",
+        "Liang Hu",
+        "Daniel Pastor"
+      ],
+      "year": 2018,
+      "journal": "International Journal of Forecasting",
+      "url": "https://doi.org/10.1016/j.ijforecast.2018.04.007",
+      "citations": 98,
+      "topics": [
+        "volatility forecasting"
+      ]
+    },
+    {
+      "doi": "10.22214/ijraset.2022.48396",
+      "title": "Mechanics of Finance- Personal Finance advisory firm: “Finance Friend”",
+      "authors": [
+        "Vishwas A",
+        "Divyanshu Kumari",
+        "Pradeep S",
+        "S Shohan",
+        "Navya Suresh",
+        "Dhruv Nair",
+        "Dr. Gopalakrishnan Chinnasamy"
+      ],
+      "year": 2022,
+      "journal": "International Journal for Research in Applied Science and Engineering Technology",
+      "url": "https://doi.org/10.22214/ijraset.2022.48396",
+      "citations": 1,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(68)90039-2",
+      "title": "Fluid mechanics",
+      "authors": [
+        "P.G. Drazin"
+      ],
+      "year": 1968,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(68)90039-2",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.7748/ns.14.41.26.s42",
+      "title": "Fluid mechanics",
+      "authors": [
+        "Suzanne Quinlan"
+      ],
+      "year": 2000,
+      "journal": "Nursing Standard",
+      "url": "https://doi.org/10.7748/ns.14.41.26.s42",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(51)91109-x",
+      "title": "Fluid mechanics",
+      "authors": [
+        "E.W. Hammer"
+      ],
+      "year": 1951,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(51)91109-x",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(54)90799-1",
+      "title": "Fluid mechanics",
+      "authors": [],
+      "year": 1954,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(54)90799-1",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1088/0031-9112/21/1/033",
+      "title": "Fluid mechanics",
+      "authors": [
+        "B R Lawrence"
+      ],
+      "year": 1970,
+      "journal": "Physics Bulletin",
+      "url": "https://doi.org/10.1088/0031-9112/21/1/033",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1615/atoz.f.flumec",
+      "title": "FLUID MECHANICS",
+      "authors": [],
+      "year": 2006,
+      "journal": "A-to-Z Guide to Thermodynamics, Heat and Mass Transfer, and Fluids Engineering",
+      "url": "https://doi.org/10.1615/atoz.f.flumec",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(60)90915-7",
+      "title": "Fluid mechanics",
+      "authors": [],
+      "year": 1960,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(60)90915-7",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1088/0031-9120/22/6/004",
+      "title": "Fluid mechanics",
+      "authors": [
+        "Philip Drazin"
+      ],
+      "year": 1987,
+      "journal": "Physics Education",
+      "url": "https://doi.org/10.1088/0031-9120/22/6/004",
+      "citations": 7,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1243/pime_proc_1947_157_039_02",
+      "title": "Fluid Mechanics",
+      "authors": [
+        "G. A. Hankins",
+        "E. F. Relf"
+      ],
+      "year": 1947,
+      "journal": "Proceedings of the Institution of Mechanical Engineers",
+      "url": "https://doi.org/10.1243/pime_proc_1947_157_039_02",
+      "citations": 1,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1038/283908a0",
+      "title": "Fluid Mechanics",
+      "authors": [
+        "T.N. Stevenson"
+      ],
+      "year": 1980,
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/283908a0",
+      "citations": 3,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0377-0257(90)90014-3",
+      "title": "Fluid Mechanics",
+      "authors": [
+        "H.A. Barnes"
+      ],
+      "year": 1990,
+      "journal": "Journal of Non-Newtonian Fluid Mechanics",
+      "url": "https://doi.org/10.1016/0377-0257(90)90014-3",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.2478/jtam-2013-0011",
+      "title": "Fluid Mechanics",
+      "authors": [
+        "St. Radev",
+        "F. R. A. Onofri",
+        "A. Lenoble",
+        "L. Tadrist"
+      ],
+      "year": 2013,
+      "journal": "Journal of Theoretical and Applied Mechanics",
+      "url": "https://doi.org/10.2478/jtam-2013-0011",
+      "citations": 7,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0309-1708(80)90070-6",
+      "title": "Fluid mechanics",
+      "authors": [],
+      "year": 1980,
+      "journal": "Advances in Water Resources",
+      "url": "https://doi.org/10.1016/0309-1708(80)90070-6",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/s0016-0032(43)90588-5",
+      "title": "Fluid mechanics",
+      "authors": [
+        "R.H. Oppermann"
+      ],
+      "year": 1943,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/s0016-0032(43)90588-5",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0017-9310(80)90186-6",
+      "title": "Fluid mechanics",
+      "authors": [
+        "R.G. Taylor"
+      ],
+      "year": 1980,
+      "journal": "International Journal of Heat and Mass Transfer",
+      "url": "https://doi.org/10.1016/0017-9310(80)90186-6",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1088/0031-9112/11/4/011",
+      "title": "Fluid Mechanics",
+      "authors": [
+        "L Howarth"
+      ],
+      "year": 1960,
+      "journal": "Physics Bulletin",
+      "url": "https://doi.org/10.1088/0031-9112/11/4/011",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1119/1.1942041",
+      "title": "Fluid Mechanics",
+      "authors": [
+        "Richard H. F. Pao",
+        "Raymond J. Seeger"
+      ],
+      "year": 1962,
+      "journal": "American Journal of Physics",
+      "url": "https://doi.org/10.1119/1.1942041",
+      "citations": 1,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.5860/choice.35-0935",
+      "title": "Fluid mechanics",
+      "authors": [],
+      "year": 1997,
+      "journal": "Choice Reviews Online",
+      "url": "https://doi.org/10.5860/choice.35-0935",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/s0016-0032(41)90982-1",
+      "title": "Fluid mechanics",
+      "authors": [
+        "R.H. Oppermann"
+      ],
+      "year": 1941,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/s0016-0032(41)90982-1",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1063/1.3067469",
+      "title": "Fluid Mechanics",
+      "authors": [],
+      "year": 1952,
+      "journal": "Physics Today",
+      "url": "https://doi.org/10.1063/1.3067469",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0017-9310(72)90104-4",
+      "title": "Fluid mechanics",
+      "authors": [
+        "Z.P. Shulman"
+      ],
+      "year": 1972,
+      "journal": "International Journal of Heat and Mass Transfer",
+      "url": "https://doi.org/10.1016/0017-9310(72)90104-4",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0142-727x(89)90033-7",
+      "title": "Fluid mechanics",
+      "authors": [
+        "I.S. Gartshore"
+      ],
+      "year": 1989,
+      "journal": "International Journal of Heat and Fluid Flow",
+      "url": "https://doi.org/10.1016/0142-727x(89)90033-7",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(61)90049-7",
+      "title": "Fluid mechanics",
+      "authors": [],
+      "year": 1961,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(61)90049-7",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(49)90442-1",
+      "title": "Fluid mechanics",
+      "authors": [
+        "F.R. Simpson"
+      ],
+      "year": 1949,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(49)90442-1",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1007/s00231-007-0284-1",
+      "title": "Fluid mechanics and continuum mechanics",
+      "authors": [
+        "O. Molerus"
+      ],
+      "year": 2007,
+      "journal": "Heat and Mass Transfer",
+      "url": "https://doi.org/10.1007/s00231-007-0284-1",
+      "citations": 3,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1088/1742-6596/318/4/042024",
+      "title": "Statistical Fluid Mechanics and Statistical Mechanics of Fluid Turbulence",
+      "authors": [
+        "Tomomasa TATSUMI"
+      ],
+      "year": 2011,
+      "journal": "Journal of Physics: Conference Series",
+      "url": "https://doi.org/10.1088/1742-6596/318/4/042024",
+      "citations": 3,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.5860/choice.45-0932",
+      "title": "Elementary fluid mechanics",
+      "authors": [],
+      "year": 2007,
+      "journal": "Choice Reviews Online",
+      "url": "https://doi.org/10.5860/choice.45-0932",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/s0997-7546(98)80021-6",
+      "title": "Statistical fluid mechanics",
+      "authors": [
+        "A. Tsinober"
+      ],
+      "year": 1998,
+      "journal": "European Journal of Mechanics - B/Fluids",
+      "url": "https://doi.org/10.1016/s0997-7546(98)80021-6",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1063/1.3058416",
+      "title": "Fluid Mechanics Films",
+      "authors": [],
+      "year": 1962,
+      "journal": "Physics Today",
+      "url": "https://doi.org/10.1063/1.3058416",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/j.physa.2006.03.066",
+      "title": "Fluid mechanics revisited",
+      "authors": [
+        "Howard Brenner"
+      ],
+      "year": 2006,
+      "journal": "Physica A: Statistical Mechanics and its Applications",
+      "url": "https://doi.org/10.1016/j.physa.2006.03.066",
+      "citations": 81,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.5860/choice.31-6075",
+      "title": "Applied fluid mechanics",
+      "authors": [],
+      "year": 1994,
+      "journal": "Choice Reviews Online",
+      "url": "https://doi.org/10.5860/choice.31-6075",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0924-0136(91)90078-s",
+      "title": "Applied fluid mechanics",
+      "authors": [
+        "T.T. Al-Shemmeri"
+      ],
+      "year": 1991,
+      "journal": "Journal of Materials Processing Technology",
+      "url": "https://doi.org/10.1016/0924-0136(91)90078-s",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.5860/choice.47-1448",
+      "title": "Fluid mechanics demystified",
+      "authors": [],
+      "year": 2009,
+      "journal": "Choice Reviews Online",
+      "url": "https://doi.org/10.5860/choice.47-1448",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1146/annurev.fluid.20.1.225",
+      "title": "Hamiltonian Fluid Mechanics",
+      "authors": [
+        "R Salmon"
+      ],
+      "year": 1988,
+      "journal": "Annual Review of Fluid Mechanics",
+      "url": "https://doi.org/10.1146/annurev.fluid.20.1.225",
+      "citations": 14,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1038/278075b0",
+      "title": "Fluid mechanics experiments",
+      "authors": [
+        "T. N. Stevenson"
+      ],
+      "year": 1979,
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/278075b0",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1177/003591577006300543",
+      "title": "Cerebrospinal Fluid Mechanics",
+      "authors": [
+        "J E A O'Connell"
+      ],
+      "year": 1970,
+      "journal": "Proceedings of the Royal Society of Medicine",
+      "url": "https://doi.org/10.1177/003591577006300543",
+      "citations": 11,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.5860/choice.46-3270",
+      "title": "Multimedia fluid mechanics",
+      "authors": [],
+      "year": 2009,
+      "journal": "Choice Reviews Online",
+      "url": "https://doi.org/10.5860/choice.46-3270",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0167-6105(77)90009-5",
+      "title": "Statistical fluid mechanics",
+      "authors": [
+        "D.M. Deaves"
+      ],
+      "year": 1977,
+      "journal": "Journal of Wind Engineering and Industrial Aerodynamics",
+      "url": "https://doi.org/10.1016/0167-6105(77)90009-5",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1016/0016-0032(47)90483-3",
+      "title": "Elementary fluid mechanics",
+      "authors": [
+        "Henry N. Michael"
+      ],
+      "year": 1947,
+      "journal": "Journal of the Franklin Institute",
+      "url": "https://doi.org/10.1016/0016-0032(47)90483-3",
+      "citations": 0,
+      "topics": [
+        "fluid mechanics finance"
+      ]
+    },
+    {
+      "doi": "10.1103/physreve.82.056104",
+      "title": "Relativistic statistical arbitrage",
+      "authors": [
+        "A. D. Wissner-Gross",
+        "C. E. Freer"
+      ],
+      "year": 2010,
+      "journal": "Physical Review E",
+      "url": "https://doi.org/10.1103/physreve.82.056104",
+      "citations": 33,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.4236/tel.2018.85063",
+      "title": "What Is Statistical Arbitrage?",
+      "authors": [
+        "Marco Lazzarino",
+        "Jenny Berrill",
+        "Aleksandar Šević"
+      ],
+      "year": 2018,
+      "journal": "Theoretical Economics Letters",
+      "url": "https://doi.org/10.4236/tel.2018.85063",
+      "citations": 3,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.3905/jpm.2005.470578",
+      "title": "Indexing and Statistical Arbitrage",
+      "authors": [
+        "Carol Alexander",
+        "Anca Dimitriu"
+      ],
+      "year": 2005,
+      "journal": "The Journal of Portfolio Management",
+      "url": "https://doi.org/10.3905/jpm.2005.470578",
+      "citations": 85,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1287/mnsc.2022.03132",
+      "title": "Deep Learning Statistical Arbitrage",
+      "authors": [
+        "Jorge Guijarro-Ordonez",
+        "Markus Pelger",
+        "Greg Zanotti"
+      ],
+      "year": 2026,
+      "journal": "Management Science",
+      "url": "https://doi.org/10.1287/mnsc.2022.03132",
+      "citations": 3,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2020.1824077",
+      "title": "Robust statistical arbitrage strategies",
+      "authors": [
+        "Eva Lütkebohmert",
+        "Julian Sester"
+      ],
+      "year": 2020,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2020.1824077",
+      "citations": 5,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.15678/aoc.2016.1505",
+      "title": "Statistical Arbitrage: A Critical View",
+      "authors": [
+        "Przemysław Jaśko"
+      ],
+      "year": 2016,
+      "journal": "Argumenta Oeconomica Cracoviensia",
+      "url": "https://doi.org/10.15678/aoc.2016.1505",
+      "citations": 0,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1111/irfi.12074",
+      "title": "Statistical Arbitrage with Pairs Trading",
+      "authors": [
+        "Ahmet Göncü",
+        "Erdinç Akyıldırım"
+      ],
+      "year": 2016,
+      "journal": "International Review of Finance",
+      "url": "https://doi.org/10.1111/irfi.12074",
+      "citations": 26,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.jedc.2022.104528",
+      "title": "Statistical arbitrage and risk contagion",
+      "authors": [
+        "Xing Gao",
+        "Daniel Ladley"
+      ],
+      "year": 2022,
+      "journal": "Journal of Economic Dynamics and Control",
+      "url": "https://doi.org/10.1016/j.jedc.2022.104528",
+      "citations": 2,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2018.1438642",
+      "title": "Statistical arbitrage with vine copulas",
+      "authors": [
+        "Johannes Stübinger",
+        "Benedikt Mangold",
+        "Christopher Krauss"
+      ],
+      "year": 2018,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2018.1438642",
+      "citations": 38,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1007/s00291-023-00733-z",
+      "title": "Statistical arbitrage: factor investing approach",
+      "authors": [
+        "Erdinc Akyildirim",
+        "Ahmet Goncu",
+        "Alper Hekimoglu",
+        "Duc Khuong Nguyen",
+        "Ahmet Sensoy"
+      ],
+      "year": 2023,
+      "journal": "OR Spectrum",
+      "url": "https://doi.org/10.1007/s00291-023-00733-z",
+      "citations": 1,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2469/dig.v38.n1.34",
+      "title": "The Statistics of Statistical Arbitrage",
+      "authors": [
+        "Robert Fernholz",
+        "Cary Maguire"
+      ],
+      "year": 2008,
+      "journal": "CFA Digest",
+      "url": "https://doi.org/10.2469/dig.v38.n1.34",
+      "citations": 0,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1093/rfs/hhg016",
+      "title": "Statistical Arbitrage and Securities Prices",
+      "authors": [
+        "Oleg Bondarenko"
+      ],
+      "year": 2003,
+      "journal": "Review of Financial Studies",
+      "url": "https://doi.org/10.1093/rfs/hhg016",
+      "citations": 114,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.3390/jrfm12010031",
+      "title": "Statistical Arbitrage in Cryptocurrency Markets",
+      "authors": [
+        "Thomas Günter Fischer",
+        "Christopher Krauss",
+        "Alexander Deinert"
+      ],
+      "year": 2019,
+      "journal": "Journal of Risk and Financial Management",
+      "url": "https://doi.org/10.3390/jrfm12010031",
+      "citations": 48,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2469/faj.v63.n5.4839",
+      "title": "The Statistics of Statistical Arbitrage",
+      "authors": [
+        "Robert Fernholz",
+        "Cary Maguire"
+      ],
+      "year": 2007,
+      "journal": "Financial Analysts Journal",
+      "url": "https://doi.org/10.2469/faj.v63.n5.4839",
+      "citations": 15,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.econlet.2010.04.015",
+      "title": "Statistical arbitrage with default and collateral",
+      "authors": [
+        "José Fajardo",
+        "Ana Lacerda"
+      ],
+      "year": 2010,
+      "journal": "Economics Letters",
+      "url": "https://doi.org/10.1016/j.econlet.2010.04.015",
+      "citations": 2,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2284577",
+      "title": "Statistical Arbitrage: Medium Frequency Portfolio Trading",
+      "authors": [
+        "Igor Skachkov"
+      ],
+      "year": 2013,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2284577",
+      "citations": 0,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.9734/bjmcs/2016/25967",
+      "title": "Statistical Arbitrage Opportunities Using Bellman Equation",
+      "authors": [
+        "Reza Habibi",
+        "Hamed Habibi"
+      ],
+      "year": 2016,
+      "journal": "British Journal of Mathematics &amp; Computer Science",
+      "url": "https://doi.org/10.9734/bjmcs/2016/25967",
+      "citations": 1,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.finmar.2011.08.003",
+      "title": "An improved test for statistical arbitrage",
+      "authors": [
+        "Robert Jarrow",
+        "Melvyn Teo",
+        "Yiu Kuen Tse",
+        "Mitch Warachka"
+      ],
+      "year": 2012,
+      "journal": "Journal of Financial Markets",
+      "url": "https://doi.org/10.1016/j.finmar.2011.08.003",
+      "citations": 21,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.48001/jbmis.2015.0201013",
+      "title": "Statistical Arbitrage: Profits through Pairs Trading",
+      "authors": [
+        "Saloni Gupta"
+      ],
+      "year": 2015,
+      "journal": "Journal of Business Management and Information Systems",
+      "url": "https://doi.org/10.48001/jbmis.2015.0201013",
+      "citations": 7,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1142/s2424786325500197",
+      "title": "Advanced statistical arbitrage with reinforcement learning",
+      "authors": [
+        "Boming Ning",
+        "Kiseop Lee"
+      ],
+      "year": 2025,
+      "journal": "International Journal of Financial Engineering",
+      "url": "https://doi.org/10.1142/s2424786325500197",
+      "citations": 0,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/24754269.2019.1675420",
+      "title": "Forecasting semi-stationary processes and statistical arbitrage",
+      "authors": [
+        "Si Bao",
+        "Shi Chen",
+        "Wei An Zheng",
+        "Yu Zhou"
+      ],
+      "year": 2019,
+      "journal": "Statistical Theory and Related Fields",
+      "url": "https://doi.org/10.1080/24754269.2019.1675420",
+      "citations": 1,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2154735",
+      "title": "Statistical Arbitrage and Robust Tests for Cointegration",
+      "authors": [
+        "Thomas A. Hanson",
+        "Joshua R. Hall"
+      ],
+      "year": 2012,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2154735",
+      "citations": 1,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.physa.2010.01.045",
+      "title": "Analytic solutions for optimal statistical arbitrage trading",
+      "authors": [
+        "William K. Bertram"
+      ],
+      "year": 2010,
+      "journal": "Physica A: Statistical Mechanics and its Applications",
+      "url": "https://doi.org/10.1016/j.physa.2010.01.045",
+      "citations": 80,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/03088839.2021.1975055",
+      "title": "Statistical arbitrage in the freight options market",
+      "authors": [
+        "Roar Adland",
+        "Lars Eirik Anestad",
+        "Bjarte Abrahamsen"
+      ],
+      "year": 2021,
+      "journal": "Maritime Policy &amp; Management",
+      "url": "https://doi.org/10.1080/03088839.2021.1975055",
+      "citations": 5,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1007/s00245-022-09838-3",
+      "title": "Statistical Arbitrage for Multiple Co-integrated Stocks",
+      "authors": [
+        "Thomas Nanfeng Li",
+        "Andrew Papanicolaou"
+      ],
+      "year": 2022,
+      "journal": "Applied Mathematics &amp; Optimization",
+      "url": "https://doi.org/10.1007/s00245-022-09838-3",
+      "citations": 1,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3235890",
+      "title": "Constructing Cointegrated Cryptocurrency Portfolios for Statistical Arbitrage",
+      "authors": [
+        "Tim Leung",
+        "Hung Nguyen"
+      ],
+      "year": 2018,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3235890",
+      "citations": 4,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.eswa.2022.117763",
+      "title": "Statistical arbitrage powered by Explainable Artificial Intelligence",
+      "authors": [
+        "Salvatore Carta",
+        "Sergio Consoli",
+        "Alessandro Sebastian Podda",
+        "Diego Reforgiato Recupero",
+        "Maria Madalina Stanciu"
+      ],
+      "year": 2022,
+      "journal": "Expert Systems with Applications",
+      "url": "https://doi.org/10.1016/j.eswa.2022.117763",
+      "citations": 19,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.procs.2022.04.027",
+      "title": "Statistical Arbitrage with Momentum Using Machine Learning",
+      "authors": [
+        "Maojun Zhang",
+        "Xiaohai Tang",
+        "Shengpei Zhao",
+        "Wenhua Wang",
+        "Yang Zhao"
+      ],
+      "year": 2022,
+      "journal": "Procedia Computer Science",
+      "url": "https://doi.org/10.1016/j.procs.2022.04.027",
+      "citations": 2,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/24754269.2019.1670525",
+      "title": "Statistical arbitrage under the efficient market hypothesis",
+      "authors": [
+        "Si Bao",
+        "Shi Chen",
+        "Xi Wang",
+        "Wei An Zheng",
+        "Yu Zhou"
+      ],
+      "year": 2019,
+      "journal": "Statistical Theory and Related Fields",
+      "url": "https://doi.org/10.1080/24754269.2019.1670525",
+      "citations": 1,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2014.961531",
+      "title": "Statistical arbitrage in the Black–Scholes framework",
+      "authors": [
+        "Ahmet Göncü"
+      ],
+      "year": 2014,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2014.961531",
+      "citations": 17,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.4236/jmf.2016.61016",
+      "title": "Statistical Arbitrage in S&amp;amp;P500",
+      "authors": [
+        "Stefanos Drakos"
+      ],
+      "year": 2016,
+      "journal": "Journal of Mathematical Finance",
+      "url": "https://doi.org/10.4236/jmf.2016.61016",
+      "citations": 6,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1080/14697680903124632",
+      "title": "Statistical arbitrage in the US equities market",
+      "authors": [
+        "Marco Avellaneda",
+        "Jeong-Hyun Lee"
+      ],
+      "year": 2010,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697680903124632",
+      "citations": 285,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1002/wilm.10271",
+      "title": "Learning and Trusting Cointegration in Statistical Arbitrage",
+      "authors": [
+        "Richard V. Diamond"
+      ],
+      "year": 2013,
+      "journal": "Wilmott",
+      "url": "https://doi.org/10.1002/wilm.10271",
+      "citations": 0,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1007/s10479-023-05585-y",
+      "title": "Statistical arbitrage under a fractal price model",
+      "authors": [
+        "Yun Xiang",
+        "Shijie Deng"
+      ],
+      "year": 2023,
+      "journal": "Annals of Operations Research",
+      "url": "https://doi.org/10.1007/s10479-023-05585-y",
+      "citations": 2,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1007/s13218-019-00610-4",
+      "title": "Machine-Learning-Based Statistical Arbitrage Football Betting",
+      "authors": [
+        "Julian Knoll",
+        "Johannes Stübinger"
+      ],
+      "year": 2019,
+      "journal": "KI - Künstliche Intelligenz",
+      "url": "https://doi.org/10.1007/s13218-019-00610-4",
+      "citations": 12,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1108/sef-08-2018-0264",
+      "title": "Constructing cointegrated cryptocurrency portfolios for statistical arbitrage",
+      "authors": [
+        "Tim Leung",
+        "Hung Nguyen"
+      ],
+      "year": 2019,
+      "journal": "Studies in Economics and Finance",
+      "url": "https://doi.org/10.1108/sef-08-2018-0264",
+      "citations": 33,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.1153505",
+      "title": "Statistical Arbitrage in the U.S. Equities Market",
+      "authors": [
+        "Marco Avellaneda",
+        "Jeong-Hyun Lee"
+      ],
+      "year": 2008,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.1153505",
+      "citations": 11,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2753/ree1540-496x4904s304",
+      "title": "Behavioral Investment Strategy Matters: A Statistical Arbitrage Approach",
+      "authors": [
+        "David S. Sun",
+        "Shih-Chuan Tsai",
+        "Wei Wang"
+      ],
+      "year": 2013,
+      "journal": "Emerging Markets Finance and Trade",
+      "url": "https://doi.org/10.2753/ree1540-496x4904s304",
+      "citations": 6,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.2949716",
+      "title": "Mean-Reverting Statistical Arbitrage in Crude Oil Markets",
+      "authors": [
+        "Viviana Fanelli"
+      ],
+      "year": 2017,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.2949716",
+      "citations": 0,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.1016/j.eiar.2023.107041",
+      "title": "Exploring arbitrage opportunities between China's carbon markets based on statistical arbitrage pairs trading strategy",
+      "authors": [
+        "Boqiang Lin",
+        "Zhizhou Tan"
+      ],
+      "year": 2023,
+      "journal": "Environmental Impact Assessment Review",
+      "url": "https://doi.org/10.1016/j.eiar.2023.107041",
+      "citations": 17,
+      "topics": [
+        "statistical arbitrage"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.4068797",
+      "title": "Big Data Asset Pricing 5: Machine Learning in Asset Pricing",
+      "authors": [
+        "Lasse Heje Pedersen"
+      ],
+      "year": 2022,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.4068797",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1007/s41060-021-00252-6",
+      "title": "Cryptocurrencies asset pricing via machine learning",
+      "authors": [
+        "Qiyu Wang"
+      ],
+      "year": 2021,
+      "journal": "International Journal of Data Science and Analytics",
+      "url": "https://doi.org/10.1007/s41060-021-00252-6",
+      "citations": 9,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1007/s11408-019-00326-3",
+      "title": "Machine learning in empirical asset pricing",
+      "authors": [
+        "Alois Weigand"
+      ],
+      "year": 2019,
+      "journal": "Financial Markets and Portfolio Management",
+      "url": "https://doi.org/10.1007/s11408-019-00326-3",
+      "citations": 30,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.3390/risks12090148",
+      "title": "Automated Machine Learning and Asset Pricing",
+      "authors": [
+        "Jerome V. Healy",
+        "Andros Gregoriou",
+        "Robert Hudson"
+      ],
+      "year": 2024,
+      "journal": "Risks",
+      "url": "https://doi.org/10.3390/risks12090148",
+      "citations": 4,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1093/rfs/hhaa009",
+      "title": "Empirical Asset Pricing via Machine Learning",
+      "authors": [
+        "Shihao Gu",
+        "Bryan Kelly",
+        "Dacheng Xiu"
+      ],
+      "year": 2020,
+      "journal": "The Review of Financial Studies",
+      "url": "https://doi.org/10.1093/rfs/hhaa009",
+      "citations": 2404,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3281018",
+      "title": "Empirical Asset Pricing via Machine Learning",
+      "authors": [
+        "Shihao Gu",
+        "Bryan T. Kelly",
+        "Dacheng Xiu"
+      ],
+      "year": 2018,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3281018",
+      "citations": 2,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1007/s00712-022-00775-x",
+      "title": "Stefan Nagel: Machine learning in asset pricing",
+      "authors": [
+        "Thorsten Hens"
+      ],
+      "year": 2022,
+      "journal": "Journal of Economics",
+      "url": "https://doi.org/10.1007/s00712-022-00775-x",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3943284",
+      "title": "Factor Models, Machine Learning, and Asset Pricing",
+      "authors": [
+        "Bryan T. Kelly",
+        "Dacheng Xiu"
+      ],
+      "year": 2021,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3943284",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1146/annurev-financial-101521-104735",
+      "title": "Factor Models, Machine Learning, and Asset Pricing",
+      "authors": [
+        "Stefano Giglio",
+        "Bryan Kelly",
+        "Dacheng Xiu"
+      ],
+      "year": 2022,
+      "journal": "Annual Review of Financial Economics",
+      "url": "https://doi.org/10.1146/annurev-financial-101521-104735",
+      "citations": 163,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1111/joes.12532",
+      "title": "Asset Pricing and Machine Learning: A critical review",
+      "authors": [
+        "Matteo Bagnara"
+      ],
+      "year": 2022,
+      "journal": "Journal of Economic Surveys",
+      "url": "https://doi.org/10.1111/joes.12532",
+      "citations": 35,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.4028525",
+      "title": "Empirical Asset Pricing via Machine Learning: The Global Edition",
+      "authors": [
+        "Nusret Cakici",
+        "Adam Zaremba"
+      ],
+      "year": 2022,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.4028525",
+      "citations": 2,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1111/joes.70002",
+      "title": "From Econometrics to Machine Learning: Transforming Empirical Asset Pricing",
+      "authors": [
+        "Chuan Shi"
+      ],
+      "year": 2025,
+      "journal": "Journal of Economic Surveys",
+      "url": "https://doi.org/10.1111/joes.70002",
+      "citations": 4,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.63887/jber.2025.1.8.17",
+      "title": "Challenges and Limitations of Machine Learning in Asset Pricing",
+      "authors": [
+        "Hao Chao"
+      ],
+      "year": 2025,
+      "journal": "Journal of Business and Economic Research",
+      "url": "https://doi.org/10.63887/jber.2025.1.8.17",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.54097/esm7q865",
+      "title": "Reflections on Asset Pricing Factors: A Machine Learning-Based Perspective",
+      "authors": [
+        "Ziding Yuan"
+      ],
+      "year": 2024,
+      "journal": "Highlights in Business, Economics and Management",
+      "url": "https://doi.org/10.54097/esm7q865",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.3934/jimo.2026124",
+      "title": "Climate uncertainty and asset pricing decisions: A machine learning analysis",
+      "authors": [
+        "Shuhua Zhang",
+        "",
+        "Tong Wang",
+        "Ning Ye",
+        "Xinyu Wang",
+        "Rui Wang",
+        "",
+        ""
+      ],
+      "year": 2026,
+      "journal": "Journal of Industrial and Management Optimization",
+      "url": "https://doi.org/10.3934/jimo.2026124",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/26941899.2023.2187895",
+      "title": "News-Based Sparse Machine Learning Models for Adaptive Asset Pricing",
+      "authors": [
+        "Liao Zhu",
+        "Haoxuan Wu",
+        "Martin T. Wells"
+      ],
+      "year": 2023,
+      "journal": "Data Science in Science",
+      "url": "https://doi.org/10.1080/26941899.2023.2187895",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.3390/jrfm15110535",
+      "title": "A Bibliometric Analysis of Machine Learning Econometrics in Asset Pricing",
+      "authors": [
+        "Hector O. Zapata",
+        "Supratik Mukhopadhyay"
+      ],
+      "year": 2022,
+      "journal": "Journal of Risk and Financial Management",
+      "url": "https://doi.org/10.3390/jrfm15110535",
+      "citations": 10,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.54097/d425df49",
+      "title": "The Combination of Traditional Asset Pricing Models and Machine Learning",
+      "authors": [
+        "Yanqing Ma"
+      ],
+      "year": 2024,
+      "journal": "Frontiers in Business, Economics and Management",
+      "url": "https://doi.org/10.54097/d425df49",
+      "citations": 1,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.33423/jaf.v20i5.3193",
+      "title": "Machine Learning Asset Pricing Factors in an Emerging Stock Market",
+      "authors": [
+        "Dan Gabriel Anghel"
+      ],
+      "year": 2020,
+      "journal": "Journal of Accounting and Finance",
+      "url": "https://doi.org/10.33423/jaf.v20i5.3193",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.red.2007.10.003",
+      "title": "Asset pricing with adaptive learning",
+      "authors": [
+        "Eva Carceles-Poveda",
+        "Chryssi Giannitsarou"
+      ],
+      "year": 2008,
+      "journal": "Review of Economic Dynamics",
+      "url": "https://doi.org/10.1016/j.red.2007.10.003",
+      "citations": 55,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.70393/6a6574626d.333233",
+      "title": "Interpretable Automated Machine Learning for Asset Pricing in U.S. Capital Markets",
+      "authors": [
+        "Yinlei Chen"
+      ],
+      "year": 2025,
+      "journal": "Journal of Economic Theory and Business Management",
+      "url": "https://doi.org/10.70393/6a6574626d.333233",
+      "citations": 5,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1287/mnsc.2023.4695",
+      "title": "Deep Learning in Asset Pricing",
+      "authors": [
+        "Luyang Chen",
+        "Markus Pelger",
+        "Jason Zhu"
+      ],
+      "year": 2024,
+      "journal": "Management Science",
+      "url": "https://doi.org/10.1287/mnsc.2023.4695",
+      "citations": 376,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.3905/jfds.2025.1.212",
+      "title": "Identifying Factor Importance in Empirical Asset Pricing by Interpretable Machine Learning",
+      "authors": [
+        "Sampan Nettayanun",
+        "Siriyos Chuthanondha"
+      ],
+      "year": 2025,
+      "journal": "The Journal of Financial Data Science",
+      "url": "https://doi.org/10.3905/jfds.2025.1.212",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.3950568",
+      "title": "Asset Pricing and Machine Learning: A Critical Review of Empirical Findings",
+      "authors": [
+        "Matteo Bagnara"
+      ],
+      "year": 2021,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.3950568",
+      "citations": 3,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.54254/2754-1169/34/20231669",
+      "title": "A Literature Study of Asset Pricing Based on Machine Learning Method",
+      "authors": [
+        "Fengtian Zhao"
+      ],
+      "year": 2023,
+      "journal": "Advances in Economics, Management and Political Sciences",
+      "url": "https://doi.org/10.54254/2754-1169/34/20231669",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.4228606",
+      "title": "Asset Pricing and Deep Learning",
+      "authors": [
+        "Chen Zhang"
+      ],
+      "year": 2022,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.4228606",
+      "citations": 1,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1108/md-04-2025-0988",
+      "title": "Fostering employees' adoption of machine learning-enabled technologies in asset pricing",
+      "authors": [
+        "Khoi Minh Nguyen",
+        "Minh Tran Dang",
+        "Linh Dan Nguyen Thi",
+        "Han Gia Nguyen",
+        "Thanh Nguyen Hoang Hung",
+        "Dung Phan Thi Minh",
+        "Ngan Thanh Nguyen"
+      ],
+      "year": 2026,
+      "journal": "Management Decision",
+      "url": "https://doi.org/10.1108/md-04-2025-0988",
+      "citations": 2,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1111/eufm.70033",
+      "title": "Empirical Asset Pricing via Machine Learning: The Role of Research Design Choices",
+      "authors": [
+        "Vaibhav Lalwani",
+        "Vedprakash Meshram",
+        "Varun Jindal"
+      ],
+      "year": 2025,
+      "journal": "European Financial Management",
+      "url": "https://doi.org/10.1111/eufm.70033",
+      "citations": 3,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.61173/3c2xae31",
+      "title": "Evolution of Asset Pricing Models: From Traditional Methods to Machine Learning Applications",
+      "authors": [
+        "Yunzhao Leng"
+      ],
+      "year": 2025,
+      "journal": "Science and Technology of Engineering, Chemistry and Environmental Protection",
+      "url": "https://doi.org/10.61173/3c2xae31",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1057/s41260-021-00237-x",
+      "title": "Empirical asset pricing via machine learning: evidence from the European stock market",
+      "authors": [
+        "Wolfgang Drobetz",
+        "Tizian Otto"
+      ],
+      "year": 2021,
+      "journal": "Journal of Asset Management",
+      "url": "https://doi.org/10.1057/s41260-021-00237-x",
+      "citations": 60,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1016/j.econlet.2021.109919",
+      "title": "A machine learning based asset pricing factor model comparison on anomaly portfolios",
+      "authors": [
+        "Ming Fang",
+        "Stephen Taylor"
+      ],
+      "year": 2021,
+      "journal": "Economics Letters",
+      "url": "https://doi.org/10.1016/j.econlet.2021.109919",
+      "citations": 10,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.54254/2754-1169/2025.20502",
+      "title": "Intelligent Finance: Emerging Applications and Challenges of Machine Learning in Asset Pricing",
+      "authors": [
+        "Yimin Jiang"
+      ],
+      "year": 2025,
+      "journal": "Advances in Economics, Management and Political Sciences",
+      "url": "https://doi.org/10.54254/2754-1169/2025.20502",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/0015198x.2026.2621646",
+      "title": "Rethinking Variable Importance in Machine Learning: An Economic Perspective on Empirical Asset Pricing",
+      "authors": [
+        "Yonghwan Jo",
+        "Yong Hwi Kim"
+      ],
+      "year": 2026,
+      "journal": "Financial Analysts Journal",
+      "url": "https://doi.org/10.1080/0015198x.2026.2621646",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1111/1540-6261.00456",
+      "title": "Learning, Asset‐Pricing Tests, and Market Efficiency",
+      "authors": [
+        "Jonathan Lewellen",
+        "Jay Shanken"
+      ],
+      "year": 2002,
+      "journal": "The Journal of Finance",
+      "url": "https://doi.org/10.1111/1540-6261.00456",
+      "citations": 289,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.2139/ssrn.1977867",
+      "title": "Asset Pricing with Learning About Disaster Risk",
+      "authors": [
+        "Yang K. Lu",
+        "Michael Siemer"
+      ],
+      "year": 2011,
+      "journal": "SSRN Electronic Journal",
+      "url": "https://doi.org/10.2139/ssrn.1977867",
+      "citations": 2,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.54097/1y4r0645",
+      "title": "Research and Analysis of Real-World Asset Token Pricing Model Based on Machine Learning",
+      "authors": [
+        "Zekai Mo"
+      ],
+      "year": 2026,
+      "journal": "Journal of Innovation and Development",
+      "url": "https://doi.org/10.54097/1y4r0645",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/00036846.2025.2484026",
+      "title": "Machine learning-driven asset pricing models: an exploration of feature sparsification and model optimisation",
+      "authors": [
+        "Jifang Mai",
+        "Shaohua Zhang",
+        "Xiyue Zhang"
+      ],
+      "year": 2025,
+      "journal": "Applied Economics",
+      "url": "https://doi.org/10.1080/00036846.2025.2484026",
+      "citations": 2,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1515/econ-2022-0108",
+      "title": "Asset Pricing and Portfolio Investment Management Using Machine Learning: Research Trend Analysis Using Scientometrics",
+      "authors": [
+        "Chao Meng",
+        "Chen Chen",
+        "Heng Xu",
+        "Ting Li"
+      ],
+      "year": 2024,
+      "journal": "Economics",
+      "url": "https://doi.org/10.1515/econ-2022-0108",
+      "citations": 2,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1111/fima.12303",
+      "title": "Machine learning and asset allocation",
+      "authors": [
+        "Bryan R. Routledge"
+      ],
+      "year": 2019,
+      "journal": "Financial Management",
+      "url": "https://doi.org/10.1111/fima.12303",
+      "citations": 10,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    },
+    {
+      "doi": "10.1080/14697688.2020.1817534",
+      "title": "Machine Learning for Asset Managers",
+      "authors": [
+        "Kris Boudt"
+      ],
+      "year": 2020,
+      "journal": "Quantitative Finance",
+      "url": "https://doi.org/10.1080/14697688.2020.1817534",
+      "citations": 0,
+      "topics": [
+        "machine learning asset pricing"
+      ]
+    }
+  ]
+}

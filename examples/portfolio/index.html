@@ -1,54 +1,9 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>working example</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <nav>
-        <a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site"
-          >atul's corner</a
-        ><a id="source" href="#">github / source</a>
-      </nav>
-      <header>
-        <p class="eyebrow">a small working example</p>
-        <h1 id="title"></h1>
-        <p id="description"></p>
-      </header>
-      <section aria-label="inputs">
-        <h2>try it</h2>
-        <div id="controls"></div>
-        <details>
-          <summary>edit the example input</summary>
-          <label for="fixture">JSON input</label
-          ><textarea id="fixture" spellcheck="false" rows="14"></textarea
-          ><button id="apply">run this input</button>
-        </details>
-        <p id="error" role="alert"></p>
-      </section>
-      <section aria-label="result">
-        <h2 id="summary" aria-live="polite"></h2>
-        <dl id="metrics"></dl>
-        <div id="chart"></div>
-        <div class="table-wrap"><table id="table"></table></div>
-        <pre id="catalogue" hidden></pre>
-        <div class="actions">
-          <button id="json">download result / json</button
-          ><button id="csv">download table / csv</button
-          ><button id="reset">reset example</button>
-        </div>
-      </section>
-      <section class="explanation">
-        <h2>the workflow</h2>
-        <p id="workflow"></p>
-        <ol id="steps"></ol>
-        <p class="scope" id="scope"></p>
-      </section>
-      <footer>built by atul kanodia · ucl economics</footer>
-    </main>
-    <script type="module" src="app.mjs"></script>
-  </body>
-</html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>quant research / reading room</title><link rel="stylesheet" href="style.css">
+<body><header><a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site">atul / research tools</a><a href="https://github.com/LolStar123/quant-research-scraper">source code</a></header>
+<main><div class="intro"><div><p class="eyebrow">quant finance research scraper</p><h1>ideas worth testing.</h1></div><p>Find papers, collect their metadata, and keep a reading list you can take into your next research project.</p></div>
+<form id="search-form"><label for="query">search titles, authors or DOI</label><div class="search-row"><input id="query" type="search" placeholder="momentum, Black Scholes, microstructure..."><button id="live">search live Crossref</button></div><p id="status" role="status">loading the paper library...</p></form>
+<div class="layout"><aside><h2>collections</h2><div id="topics"></div><button id="saved-filter" aria-pressed="false">your reading list <b id="saved-count">0</b></button><div class="exports"><h3>take your list with you</h3><button id="export-bib">export BibTeX</button><button id="export-json">export JSON</button><label class="import-label">import a reading list<input id="import" type="file" accept=".json,application/json"></label></div><p class="small" id="provenance"></p></aside>
+<section aria-label="papers"><div class="result-tools"><p id="count"></p><label>sort <select id="sort"><option value="citations">most cited</option><option value="year">newest</option><option value="title">title</option></select></label></div><div id="papers"></div><div class="pagination"><button id="previous">previous</button><span id="page-number"></span><button id="next">next</button></div></section></div>
+<footer>Metadata comes from <a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/">Crossref</a>. Topic collections are search results, not endorsements or a claim that every paper is finance-specific. Citation counts are as collected. Full papers remain on their publishers' sites. Saved choices stay in this browser. Folder interaction inspiration: <a href="https://www.rareui.com/components/foldercomponent">Rare UI</a>.</footer></main><script type="module" src="app.mjs"></script></body></html>

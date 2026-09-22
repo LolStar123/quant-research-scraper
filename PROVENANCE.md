@@ -1,16 +1,9 @@
-# Public example provenance
+# Data and project scope
 
-Prepared 22 September 2026 for Atul Kanodia's project portfolio.
+The seeded library contains real journal-article metadata retrieved from the Crossref REST API on the timestamp in data/papers.json. Eight public topic queries return 40 results each. Topic membership means the API returned the paper for that query; it is not an editorial quality judgement. Citation counts are Crossref counts at collection time.
 
-## Original work
+This working public implementation follows the author's research collection workflow: search, collect metadata, deduplicate, retain source links and export a research queue. It adds a browser reading list and a reproducible Crossref collector. The author's local paper strategy and Navier-Stokes research scripts remain the originating workflow, not a claim that these 320 papers were all used in a backtest.
 
-User-described research collection workflow; local quant/paper_strategies_* research and quant/navier_stokes_research/paper_find.py.
+No paper full text, account data, private notes, API credentials or subscription access is bundled. Publisher links may require access. The HTML collector's paper.html remains an explicitly authored parser fixture, separate from the real public library.
 
-## This repository's example
-
-A compact public collection example with authored fixture records. It does not redistribute paper text.
-
-The example was built for public inspection of the documented workflow. It is not a claim
-that the complete production application fits into this one module. Existing repository
-source retains its original history. Generated records have no customer, player, account,
-or private-message identifiers. Inputs and outputs can be exported and inspected.
+Sources: https://www.crossref.org/documentation/retrieve-metadata/rest-api/ and https://api.crossref.org/works.

@@ -1,224 +1,36 @@
-import { defaults, controls, run } from "./model.mjs";
-const meta = await (await fetch("./project.json")).json();
-const catalogue = await fetch("./catalogue.json")
-  .then((r) => (r.ok ? r.json() : null))
-  .catch(() => null);
-if (catalogue) defaults.catalogue = catalogue;
-const $ = (s) => document.querySelector(s),
-  input = structuredClone(defaults);
-document.title = meta.title + " | working example";
-$("#title").textContent = meta.title;
-$("#description").textContent = meta.caption;
-$("#scope").textContent = meta.boundary;
-$("#source").href = `https://github.com/LolStar123/${meta.repo}`;
-$("#workflow").textContent = meta.workflow;
-const esc = (s) =>
-  String(s ?? "").replace(
-    /[&<>"']/g,
-    (c) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
-        c
-      ],
-  );
-for (const spec of controls) {
-  const label = document.createElement("label");
-  label.textContent = spec.label;
-  const el = document.createElement(
-    spec.type === "select" ? "select" : "input",
-  );
-  el.id = spec.key;
-  if (spec.type === "select")
-    for (const v of spec.options) {
-      const o = new Option(v, v);
-      el.add(o);
-    }
-  else el.type = spec.type;
-  for (const k of ["min", "max", "step"])
-    if (spec[k] !== undefined) el[k] = spec[k];
-  if (spec.type === "checkbox") el.checked = input[spec.key];
-  else el.value = input[spec.key];
-  el.addEventListener("input", () => {
-    input[spec.key] =
-      spec.type === "checkbox"
-        ? el.checked
-        : spec.type === "number"
-          ? Number(el.value)
-          : el.value;
-    $("#fixture").value = JSON.stringify(input, null, 2);
-    render();
-  });
-  label.append(el);
-  $("#controls").append(label);
+import {deduplicate,fromCrossref,key,search,bibtex} from './model.mjs';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let papers=[],topic='',savedOnly=false,page=0,saved=new Set(),collected='';
+const size=15;
+function store(){try{localStorage.setItem('quant-reading-room',JSON.stringify(papers.filter(p=>saved.has(key(p)))))}catch{$('#status').textContent='Browser storage is full. Export your reading list to keep it.'}}
+function render(){
+    const topics=[...new Set(papers.flatMap(p=>p.topics))];
+    $('#topics').innerHTML=[['','all papers'],...topics.map(t=>[t,t])].map(([k,t])=>`<button class="folder" data-topic="${esc(k)}" aria-pressed="${topic===k}">${esc(t)} <small>${k?papers.filter(p=>p.topics.includes(k)).length:papers.length}</small></button>`).join('');
+    $('#saved-count').textContent=saved.size;$('#saved-filter').setAttribute('aria-pressed',savedOnly);
+    const results=search(papers,{query:$('#query').value,topic,sort:$('#sort').value,saved:savedOnly?saved:null});
+    page=Math.min(page,Math.max(0,Math.ceil(results.length/size)-1));
+    $('#count').textContent=`${results.length} papers${savedOnly?' in your reading list':''}`;
+    $('#papers').innerHTML=results.slice(page*size,(page+1)*size).map(p=>`<article class="paper"><div><p class="meta">${p.year||'undated'} / ${p.citations.toLocaleString()} citations</p><h2>${esc(p.title)}</h2><p>${esc(p.authors.slice(0,5).join(', '))}${p.authors.length>5?' and others':''}</p><p>${esc(p.journal)}</p>${p.url?`<a class="paper-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">open publisher page</a>`:''}</div><button data-save="${esc(key(p))}" aria-pressed="${saved.has(key(p))}">${saved.has(key(p))?'saved':'save'}</button></article>`).join('')||'<p>No papers match. Clear the search, choose another collection, or search Crossref.</p>';
+    $('#page-number').textContent=`${results.length?page+1:0} / ${Math.ceil(results.length/size)}`;
+    $('#previous').disabled=page===0;$('#next').disabled=(page+1)*size>=results.length;
+    $('#export-bib').disabled=$('#export-json').disabled=!saved.size;
+    window.__research={ready:true,total:papers.length,filtered:results.length,saved:saved.size};
 }
-$("#fixture").value = JSON.stringify(input, null, 2);
-let result = null;
-function plot(r) {
-  const ns = "http://www.w3.org/2000/svg",
-    svg = document.createElementNS(ns, "svg");
-  svg.setAttribute("viewBox", "0 0 720 220");
-  svg.setAttribute("role", "img");
-  const title = document.createElementNS(ns, "title");
-  title.textContent = r.seriesLabel || "Traversable route around blocked cells";
-  svg.append(title);
-  const draw = (tag, attrs) => {
-    const e = document.createElementNS(ns, tag);
-    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
-    svg.append(e);
-    return e;
-  };
-  if (r.grid) {
-    const g = r.grid,
-      s = Math.min(680 / g.width, 195 / g.height),
-      ox = 20,
-      oy = 12;
-    for (const [x, y] of g.blocked)
-      draw("rect", {
-        x: ox + x * s,
-        y: oy + y * s,
-        width: s,
-        height: s,
-        fill: "#a7a18e",
-      });
-    if (g.path.length)
-      draw("polyline", {
-        points: g.path
-          .map(([x, y]) => `${ox + (x + 0.5) * s},${oy + (y + 0.5) * s}`)
-          .join(" "),
-        fill: "none",
-        stroke: "#536c50",
-        "stroke-width": 3,
-      });
-    for (const [p, color] of [
-      [g.start, "#536c50"],
-      [g.goal, "#a34d32"],
-    ])
-      draw("circle", {
-        cx: ox + (p[0] + 0.5) * s,
-        cy: oy + (p[1] + 0.5) * s,
-        r: s * 0.38,
-        fill: color,
-      });
-  } else {
-    const vals = r.series,
-      lo = Math.min(...vals),
-      hi = Math.max(...vals),
-      span = hi - lo || 1;
-    draw("path", { d: "M48 12 V186 H700", stroke: "#aaa38e", fill: "none" });
-    draw("polyline", {
-      points: vals
-        .map(
-          (v, n) =>
-            `${48 + (n / (vals.length - 1 || 1)) * 652},${178 - ((v - lo) / span) * 150}`,
-        )
-        .join(" "),
-      fill: "none",
-      stroke: "#536c50",
-      "stroke-width": 2,
-    });
-    for (const [y, v] of [
-      [26, hi],
-      [181, lo],
-    ])
-      draw("text", {
-        x: 44,
-        y,
-        "text-anchor": "end",
-        "font-size": 11,
-        fill: "#5c584e",
-      }).textContent = v.toFixed(2);
-    draw("text", {
-      x: 48,
-      y: 210,
-      "font-size": 12,
-      fill: "#5c584e",
-    }).textContent = r.seriesLabel;
-  }
-  return svg;
-}
-function render() {
-  try {
-    result = run(input);
-    $("#error").textContent = "";
-    $("#summary").textContent = result.summary;
-    $("#metrics").innerHTML = Object.entries(result.metrics)
-      .map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`)
-      .join("");
-    $("#table").innerHTML =
-      "<thead><tr>" +
-      result.columns
-        .map((c) => '<th scope="col">' + esc(c) + "</th>")
-        .join("") +
-      "</tr></thead><tbody>" +
-      result.rows
-        .map(
-          (row) =>
-            "<tr>" +
-            row.map((v) => "<td>" + esc(v) + "</td>").join("") +
-            "</tr>",
-        )
-        .join("") +
-      "</tbody>";
-    $("#steps").innerHTML = result.steps
-      .map((s) => "<li>" + esc(s) + "</li>")
-      .join("");
-    $("#chart").replaceChildren();
-    if (result.series?.length || result.grid) $("#chart").append(plot(result));
-    $("#catalogue").textContent = result.extra
-      ? JSON.stringify(result.extra, null, 2)
-      : "";
-    $("#catalogue").hidden = !result.extra;
-    window.__example = { input: structuredClone(input), result, ready: true };
-  } catch (e) {
-    result = null;
-    $("#error").textContent = e.message;
-    window.__example = { ready: false, error: e.message };
-  }
-}
-$("#apply").onclick = () => {
-  try {
-    const parsed = JSON.parse($("#fixture").value);
-    for (const key of Object.keys(input)) delete input[key];
-    Object.assign(input, parsed);
-    for (const s of controls) {
-      if (s.type === "checkbox") $("#" + s.key).checked = !!input[s.key];
-      else $("#" + s.key).value = input[s.key];
-    }
-    render();
-  } catch (e) {
-    $("#error").textContent = e.message;
-  }
+$('#query').oninput=()=>{page=0;render()};$('#sort').onchange=()=>{page=0;render()};
+$('#topics').onclick=e=>{const b=e.target.closest('[data-topic]');if(!b)return;topic=b.dataset.topic;page=0;render()};
+$('#saved-filter').onclick=()=>{savedOnly=!savedOnly;page=0;render()};
+$('#papers').onclick=e=>{const b=e.target.closest('[data-save]');if(!b)return;const id=b.dataset.save;saved.has(id)?saved.delete(id):saved.add(id);store();render()};
+$('#previous').onclick=()=>{page--;render()};$('#next').onclick=()=>{page++;render()};
+function download(content,name,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$('#export-bib').onclick=()=>download(bibtex(papers.filter(p=>saved.has(key(p)))),'reading-list.bib','text/plain');
+$('#export-json').onclick=()=>download(JSON.stringify(papers.filter(p=>saved.has(key(p))),null,2),'reading-list.json','application/json');
+$('#import').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>5000000)throw Error('Choose a JSON file under 5 MB.');const value=JSON.parse(await file.text());const rows=deduplicate(Array.isArray(value)?value:value.papers);papers=deduplicate([...papers,...rows]);for(const r of rows)saved.add(key(papers.find(p=>p.doi===r.doi&&r.doi||p.title===r.title)||r));store();render();$('#status').textContent=`Imported ${rows.length} unique papers into your reading list.`}catch(e){$('#status').textContent='Import failed: '+e.message}};
+$('#search-form').onsubmit=async e=>{
+    e.preventDefault();const q=$('#query').value.trim();if(!q){$('#status').textContent='Enter a topic or paper title first.';return}
+    $('#live').disabled=true;$('#status').textContent='Collecting public Crossref metadata...';
+    try{const r=await fetch('https://api.crossref.org/works?'+new URLSearchParams({'query.bibliographic':q,rows:'40',filter:'type:journal-article'}),{signal:AbortSignal.timeout(25000)});if(!r.ok)throw Error(`Crossref returned ${r.status}`);const data=await r.json();const incoming=data.message.items.filter(i=>i.title?.[0]).map(i=>fromCrossref(i,q));const before=papers.length;papers=deduplicate([...papers,...incoming]);topic=q;$('#query').value='';savedOnly=false;page=0;render();$('#status').textContent=`Collected ${incoming.length} results; added ${papers.length-before} new papers after deduplication. Save any you want to keep.`}
+    catch(e){$('#status').textContent=`Live search unavailable (${e.message}). The bundled library and exports still work. Try again later.`}
+    finally{$('#live').disabled=false}
 };
-$("#reset").onclick = () => {
-  location.reload();
-};
-function download(name, text, type) {
-  const u = URL.createObjectURL(new Blob([text], { type })),
-    a = document.createElement("a");
-  a.href = u;
-  a.download = name;
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(u), 1000);
-}
-$("#json").onclick = () => {
-  if (result)
-    download(
-      meta.repo + "-result.json",
-      JSON.stringify(result.artifact, null, 2),
-      "application/json",
-    );
-};
-$("#csv").onclick = () => {
-  if (result)
-    download(
-      meta.repo + "-result.csv",
-      [result.columns, ...result.rows]
-        .map((row) =>
-          row
-            .map((v) => '"' + String(v ?? "").replace(/"/g, '""') + '"')
-            .join(","),
-        )
-        .join("\r\n"),
-      "text/csv",
-    );
-};
-render();
+try{const r=await fetch('data/papers.json');if(!r.ok)throw Error('Bundled library could not load');const data=await r.json();papers=deduplicate(data.papers);collected=data.collected;try{const cached=JSON.parse(localStorage.getItem('quant-reading-room')||'[]');const rows=deduplicate(cached);papers=deduplicate([...papers,...rows]);saved=new Set(rows.map(key))}catch{}$('#provenance').textContent=`Crossref metadata collected ${new Date(collected).toLocaleDateString()}. Save papers to keep them between visits.`;$('#status').textContent=`${papers.length} real papers ready to explore. Type to filter here, or search live.`;render()}catch(e){$('#status').textContent=e.message;throw e}
