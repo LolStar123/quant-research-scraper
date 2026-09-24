@@ -24,13 +24,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test examples/portfolio/model.test.mjs
+      - run: node --test examples/portfolio/model.test.mjs examples/portfolio/backtesting/model.test.mjs
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium
       - run: python tools/browser_audit.py
+      - run: python tools/backtesting_audit.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -41,3 +42,8 @@ jobs:
         env:
           AUDIT_URL: https://lolstar123.github.io/quant-research-scraper/
         run: python tools/browser_audit.py
+
+      - name: Audit the public backtesting workbench
+        env:
+          AUDIT_URL: https://lolstar123.github.io/quant-research-scraper/backtesting/
+        run: python tools/backtesting_audit.py
