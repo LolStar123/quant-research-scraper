@@ -1,16 +1,22 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>quant research / paper finder</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>quant research / paper finder</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="identity.css"></head>
 <body>
 <header><a href="https://lolstar123.github.io/just-a-little-further/">atul / research</a><nav><a href="backtesting/">backtests</a><a href="https://github.com/LolStar123/quant-research-scraper">source</a></nav></header>
 <main>
-    <section class="hero"><p>research pipeline</p><h1>find the paper.<br><em>keep the useful bit.</em></h1></section>
+    <section class="hero"><p>research pipeline</p><h1>papers in. out-of-sample evidence out.</h1></section>
     <form id="search-form">
         <label for="query">title, author or DOI</label>
         <div class="search-row"><input id="query" type="search" placeholder="market microstructure…"><button id="live">search live</button></div>
         <p id="status" role="status">loading papers…</p>
     </form>
     <div id="topics" class="topics" aria-label="Topics"></div>
+    <section class="walk-forward" aria-labelledby="forward-title">
+        <div class="forward-head"><div><p>automated forward testing</p><h2 id="forward-title">past selects. the next window judges.</h2></div><button id="run-test">run test</button></div>
+        <div id="forward-stats" aria-live="polite"></div>
+        <div id="forward-chart" role="img" aria-label="Out-of-sample strategy and benchmark equity"></div>
+        <div class="forward-foot"><span id="forward-window">loading prices…</span><a href="backtesting/">full experiment</a></div>
+    </section>
     <div class="result-tools"><p id="count"></p><div><button id="saved-filter" aria-pressed="false">saved <b id="saved-count">0</b></button><select id="sort" aria-label="Sort papers"><option value="citations">most cited</option><option value="year">newest</option><option value="title">title</option></select></div></div>
     <section id="papers" aria-label="papers"></section>
     <nav class="pagination" aria-label="Paper pages"><button id="previous">←</button><span id="page-number"></span><button id="next">→</button></nav>

@@ -1,4 +1,5 @@
 import { deduplicate, fromCrossref, key, search, bibtex } from "./model.mjs";
+import { backtest } from "./backtesting/model.mjs";
 const $ = (s) => document.querySelector(s);
 const esc = (s) =>
     String(s ?? "").replace(
@@ -19,6 +20,44 @@ let papers = [],
     saved = new Set(),
     collected = "";
 const size = 8;
+const forwardRuns = [
+    { training: 504, testing: 63, costBps: 5 },
+    { training: 252, testing: 21, costBps: 5 },
+    { training: 756, testing: 126, costBps: 8 },
+];
+let forwardPrices = [], forwardRun = 0;
+const pct = (value) => (value * 100).toFixed(1) + "%";
+function renderForward() {
+    if (!forwardPrices.length) return;
+    const config = forwardRuns[forwardRun++ % forwardRuns.length];
+    const result = backtest(forwardPrices, config);
+    const stats = [
+        [pct(result.stats.cagr), "oos return"],
+        [result.stats.sharpe.toFixed(2), "sharpe"],
+        [pct(result.stats.drawdown), "drawdown"],
+    ];
+    $("#forward-stats").innerHTML = stats.map(([value, label]) => `<span><strong>${value}</strong><small>${label}</small></span>`).join("");
+    const curves = result.curve.flatMap((point) => [point.equity, point.benchmark]);
+    const min = Math.min(...curves), max = Math.max(...curves), range = Math.max(.01, max - min);
+    const x = (index) => 2 + index / (result.curve.length - 1) * 756;
+    const y = (value) => 96 - (value - min) / range * 90;
+    const path = (key) => result.curve.map((point, index) => `${index ? "L" : "M"}${x(index).toFixed(1)} ${y(point[key]).toFixed(1)}`).join(" ");
+    $("#forward-chart").innerHTML = `<svg viewBox="0 0 760 102" preserveAspectRatio="none"><path d="${path("benchmark")}" class="benchmark"/><path d="${path("equity")}" class="strategy"/></svg>`;
+    $("#forward-window").textContent = `${config.training / 252}y train · ${config.testing} unseen sessions · ${config.costBps}bp costs`;
+    window.__research = { ...(window.__research || {}), forwardReady: true, forwardWindows: result.windows.length };
+}
+async function loadForward() {
+    try {
+        const response = await fetch("backtesting/data/spy.json");
+        if (!response.ok) throw Error("prices unavailable");
+        forwardPrices = (await response.json()).prices;
+        renderForward();
+    } catch (error) {
+        $("#forward-window").textContent = error.message;
+    }
+}
+$("#run-test").onclick = renderForward;
+loadForward();
 function store() {
     try {
         localStorage.setItem(
@@ -64,6 +103,7 @@ function render() {
     $("#next").disabled = (page + 1) * size >= results.length;
     $("#export-bib").disabled = $("#export-json").disabled = !saved.size;
     window.__research = {
+        ...(window.__research || {}),
         ready: true,
         total: papers.length,
         filtered: results.length,

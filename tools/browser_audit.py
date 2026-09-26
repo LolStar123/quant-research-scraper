@@ -17,6 +17,12 @@ try:
         errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
         page.goto(os.environ.get('AUDIT_URL',f'http://127.0.0.1:{server.server_port}'),wait_until='networkidle')
         page.wait_for_function('window.__research?.ready')
+        page.wait_for_function('window.__research?.forwardReady')
+        assert page.locator('#forward-stats span').count()==3
+        first_window=page.locator('#forward-window').inner_text()
+        page.locator('#run-test').click()
+        assert page.locator('#forward-window').inner_text()!=first_window
+        assert page.evaluate('__research.forwardWindows')>0
         assert page.evaluate('__research.total')>=300
         assert page.locator('.paper').count()==8
         page.locator('[data-save]').first.click()
@@ -52,6 +58,6 @@ try:
         page.set_viewport_size({'width':390,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'),'mobile overflow'
         assert not errors,errors
-        print('PASS: populated library, search, DOI collection, save/import, BibTeX and mobile')
+        print('PASS: paper collection, live DOI search, walk-forward test, save/import, BibTeX and mobile')
         browser.close()
 finally: server.shutdown()
