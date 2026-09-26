@@ -18,7 +18,7 @@ let papers = [],
     page = 0,
     saved = new Set(),
     collected = "";
-const size = 15;
+const size = 8;
 function store() {
     try {
         localStorage.setItem(
@@ -35,7 +35,7 @@ function render() {
     $("#topics").innerHTML = [["", "all papers"], ...topics.map((t) => [t, t])]
         .map(
             ([k, t]) =>
-                `<button class="folder" data-topic="${esc(k)}" aria-pressed="${topic === k}">${esc(t)} <small>${k ? papers.filter((p) => p.topics.includes(k)).length : papers.length}</small></button>`,
+                `<button class="folder" data-topic="${esc(k)}" aria-pressed="${topic === k}">${esc(t)}</button>`,
         )
         .join("");
     $("#saved-count").textContent = saved.size;
@@ -54,7 +54,7 @@ function render() {
             .slice(page * size, (page + 1) * size)
             .map(
                 (p) =>
-                    `<article class="paper"><div><p class="meta">${p.year || "undated"} / ${p.citations.toLocaleString()} citations</p><h2>${esc(p.title)}</h2><p>${esc(p.authors.slice(0, 5).join(", "))}${p.authors.length > 5 ? " and others" : ""}</p><p>${esc(p.journal)}</p>${p.url ? `<a class="paper-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">open publisher page</a>` : ""}</div><button data-save="${esc(key(p))}" aria-pressed="${saved.has(key(p))}">${saved.has(key(p)) ? "saved" : "save"}</button></article>`,
+                    `<article class="paper"><div><p class="meta">${p.year || "undated"} · ${p.citations.toLocaleString()} citations</p><h2>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>` : esc(p.title)}</h2><p>${esc(p.authors.slice(0, 3).join(", "))}${p.authors.length > 3 ? " et al." : ""}</p></div><button data-save="${esc(key(p))}" aria-pressed="${saved.has(key(p))}">${saved.has(key(p)) ? "saved" : "save"}</button></article>`,
             )
             .join("") ||
         "<p>No papers match. Clear the search, choose another collection, or search Crossref.</p>";
@@ -149,8 +149,7 @@ $("#import").onchange = async (e) => {
             );
         store();
         render();
-        $("#status").textContent =
-            `Imported ${rows.length} unique papers into your reading list.`;
+        $("#status").textContent = `${rows.length} imported.`;
     } catch (e) {
         $("#status").textContent = "Import failed: " + e.message;
     }
@@ -163,7 +162,7 @@ $("#search-form").onsubmit = async (e) => {
         return;
     }
     $("#live").disabled = true;
-    $("#status").textContent = "Collecting public Crossref metadata...";
+    $("#status").textContent = "searching Crossref…";
     try {
         const r = await fetch(
             "https://api.crossref.org/works?" +
@@ -186,11 +185,9 @@ $("#search-form").onsubmit = async (e) => {
         savedOnly = false;
         page = 0;
         render();
-        $("#status").textContent =
-            `Collected ${incoming.length} results; added ${papers.length - before} new papers after deduplication. Save any you want to keep.`;
+        $("#status").textContent = `${incoming.length} found · ${papers.length - before} new.`;
     } catch (e) {
-        $("#status").textContent =
-            `Live search unavailable (${e.message}). The bundled library and exports still work. Try again later.`;
+        $("#status").textContent = `Live search unavailable: ${e.message}`;
     } finally {
         $("#live").disabled = false;
     }
@@ -209,10 +206,8 @@ try {
         papers = deduplicate([...papers, ...rows]);
         saved = new Set(rows.map(key));
     } catch {}
-    $("#provenance").textContent =
-        `Crossref metadata collected ${new Date(collected).toLocaleDateString()}. Save papers to keep them between visits.`;
-    $("#status").textContent =
-        `${papers.length} real papers ready to explore. Type to filter here, or search live.`;
+    $("#provenance").textContent = `Crossref · ${new Date(collected).toLocaleDateString()}`;
+    $("#status").textContent = `${papers.length} papers ready.`;
     render();
 } catch (e) {
     $("#status").textContent = e.message;

@@ -1,93 +1,20 @@
 <!doctype html>
 <html lang="en">
-    <meta charset="utf-8" /><meta
-        name="viewport"
-        content="width=device-width,initial-scale=1"
-    />
-    <title>quant research / reading room</title
-    ><link rel="stylesheet" href="style.css" />
-    <body>
-        <header>
-            <a
-                href="https://lolstar123.github.io/just-a-little-further/"
-                >atul / research tools</a
-            ><a href="https://github.com/LolStar123/quant-research-scraper"
-                >source code</a
-            >
-        </header>
-        <nav class="research-nav" aria-label="research workflow"><a href="./">papers</a><a href="backtesting/">backtesting</a></nav><main>
-            <div class="intro">
-                <div>
-                    <p class="eyebrow">quant finance research scraper</p>
-                    <h1>quant research / paper library</h1>
-                </div>
-                <p>
-                    Collect papers, keep their sources, and carry the useful
-                    ones into a test.
-                </p>
-            </div>
-            <form id="search-form">
-                <label for="query"
-                    >title, author or DOI</label
-                >
-                <div class="search-row">
-                    <input
-                        id="query"
-                        type="search"
-                        placeholder="momentum, Black Scholes, microstructure..."
-                    /><button id="live">find more on Crossref</button>
-                </div>
-                <p id="status" role="status">loading the paper library...</p>
-            </form>
-            <div class="layout">
-                <aside>
-                    <h2>collections</h2>
-                    <div id="topics"></div>
-                    <button id="saved-filter" aria-pressed="false">
-                        your reading list <b id="saved-count">0</b>
-                    </button>
-                    <div class="exports">
-                        <h3>export</h3>
-                        <button id="export-bib">export BibTeX</button
-                        ><button id="export-json">export JSON</button
-                        ><label class="import-label"
-                            >import a reading list<input
-                                id="import"
-                                type="file"
-                                accept=".json,application/json"
-                        /></label>
-                    </div>
-                    <p class="small" id="provenance"></p>
-                </aside>
-                <section aria-label="papers">
-                    <div class="result-tools">
-                        <p id="count"></p>
-                        <label
-                            >sort
-                            <select id="sort">
-                                <option value="citations">most cited</option>
-                                <option value="year">newest</option>
-                                <option value="title">title</option>
-                            </select></label
-                        >
-                    </div>
-                    <div id="papers"></div>
-                    <div class="pagination">
-                        <button id="previous">previous</button
-                        ><span id="page-number"></span
-                        ><button id="next">next</button>
-                    </div>
-                </section>
-            </div>
-            <footer>
-                320 public paper records from
-                <a
-                    href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
-                    >Crossref</a
-                >. Topic folders are search results. Saved papers stay in this
-                browser.
-            </footer>
-        </main>
-        <script type="module" src="app.mjs"></script>
-    </body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>quant research / paper finder</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a href="https://lolstar123.github.io/just-a-little-further/">atul / research</a><nav><a href="backtesting/">backtests</a><a href="https://github.com/LolStar123/quant-research-scraper">source</a></nav></header>
+<main>
+    <section class="hero"><p>research pipeline</p><h1>find the paper.<br><em>keep the useful bit.</em></h1></section>
+    <form id="search-form">
+        <label for="query">title, author or DOI</label>
+        <div class="search-row"><input id="query" type="search" placeholder="market microstructure…"><button id="live">search live</button></div>
+        <p id="status" role="status">loading papers…</p>
+    </form>
+    <div id="topics" class="topics" aria-label="Topics"></div>
+    <div class="result-tools"><p id="count"></p><div><button id="saved-filter" aria-pressed="false">saved <b id="saved-count">0</b></button><select id="sort" aria-label="Sort papers"><option value="citations">most cited</option><option value="year">newest</option><option value="title">title</option></select></div></div>
+    <section id="papers" aria-label="papers"></section>
+    <nav class="pagination" aria-label="Paper pages"><button id="previous">←</button><span id="page-number"></span><button id="next">→</button></nav>
+    <details class="reading-list"><summary>reading list tools</summary><div><button id="export-bib">BibTeX</button><button id="export-json">JSON</button><label>import<input id="import" type="file" accept=".json,application/json"></label></div><p id="provenance"></p></details>
+</main>
+<script type="module" src="app.mjs"></script>
+</body></html>

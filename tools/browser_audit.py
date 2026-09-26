@@ -18,9 +18,10 @@ try:
         page.goto(os.environ.get('AUDIT_URL',f'http://127.0.0.1:{server.server_port}'),wait_until='networkidle')
         page.wait_for_function('window.__research?.ready')
         assert page.evaluate('__research.total')>=300
-        assert page.locator('.paper').count()==15
+        assert page.locator('.paper').count()==8
         page.locator('[data-save]').first.click()
         assert page.evaluate('__research.saved')==1
+        page.locator('details.reading-list summary').click()
         with page.expect_download() as dl:page.locator('#export-json').click()
         saved_file=dl.value.path()
         page.locator('[data-save]').first.click()
@@ -40,7 +41,7 @@ try:
         # Deterministic API interaction, followed by a real network probe separately.
         page.route('https://api.crossref.org/**',lambda route:route.fulfill(json={'message':{'items':[{'DOI':'10.9999/test-metadata','title':['Audit paper'],'author':[{'family':'Example'}],'published':{'date-parts':[[2026]]}}]}}))
         page.locator('#query').fill('audit paper');page.locator('#live').click()
-        page.wait_for_function('document.querySelector("#status").textContent.startsWith("Collected")')
+        page.wait_for_function('document.querySelector("#status").textContent.includes("found")')
         assert page.locator('.paper h2').inner_text()=='Audit paper'
         page.unroute('https://api.crossref.org/**')
         page.locator('[data-topic=""]').click()
