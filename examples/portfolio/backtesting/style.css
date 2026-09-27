@@ -180,6 +180,7 @@ h3 {
     max-height: 380px;
     overflow: auto;
     border-top: 1px solid #324348;
+    padding-top: 12px;
 }
 table {
     width: 100%;
