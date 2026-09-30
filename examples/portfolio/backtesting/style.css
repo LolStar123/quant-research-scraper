@@ -121,6 +121,28 @@ label span {
     line-height: 1.8;
     color: #829ca2;
 }
+.method,
+.decisions,
+.data-notes {
+    color: #a8babd;
+}
+.method summary,
+.decisions summary,
+.data-notes summary {
+    cursor: pointer;
+    color: #c7a96b;
+    font: 11px monospace;
+    letter-spacing: .04em;
+}
+.method .note {
+    margin: 12px 0 0;
+}
+.decisions {
+    margin-top: 30px;
+}
+.decisions .table-wrap {
+    margin-top: 12px;
+}
 #stats {
     display: flex;
     justify-content: space-between;
@@ -262,6 +284,12 @@ footer {
     margin-top: 32px;
     padding-top: 20px;
 }
+.data-notes p {
+    max-width: 900px;
+    margin: 12px 0 0;
+    color: #819aa1;
+    line-height: 1.8;
+}
 [hidden] {
     display: none !important;
 }
@@ -286,6 +314,9 @@ footer {
     aside h2,
     aside .eyebrow,
     aside .note {
+        grid-column: 1/-1;
+    }
+    aside .method {
         grid-column: 1/-1;
     }
     label {

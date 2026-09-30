@@ -73,12 +73,15 @@
                                 basis points</span
                             ></label
                         ><button id="run">run the walk-forward test</button>
-                        <p class="note">
-                            Each training window chooses from 20, 60, 120 and
-                            200-day moving-average rules. The winning rule is
-                            frozen for the next test window. Signals use the
-                            previous close. Costs apply when exposure changes.
-                        </p>
+                        <details class="method">
+                            <summary>method</summary>
+                            <p class="note">
+                                Each training window chooses from 20, 60, 120 and
+                                200-day moving-average rules. The winning rule is
+                                frozen for the next test window. Signals use the
+                                previous close. Costs apply when exposure changes.
+                            </p>
+                        </details>
                         <button id="download">
                             export out-of-sample returns
                         </button>
@@ -96,8 +99,9 @@
                         <p id="cursor">
                             Move over the chart to inspect a trading day.
                         </p>
-                        <h3>the decisions, before the test begins</h3>
-                        <div class="table-wrap">
+                        <details class="decisions">
+                            <summary>decisions by test window</summary>
+                            <div class="table-wrap">
                             <table>
                                 <thead>
                                     <tr>
@@ -109,7 +113,8 @@
                                 </thead>
                                 <tbody id="windows"></tbody>
                             </table>
-                        </div>
+                            </div>
+                        </details>
                     </article>
                 </div>
             </section>
@@ -154,7 +159,7 @@
                     </table>
                 </div>
             </section>
-            <footer id="provenance"></footer>
+            <footer><details class="data-notes"><summary>data notes</summary><p id="provenance"></p></details></footer>
         </main>
         <script type="module" src="app.mjs"></script>
     </body>
