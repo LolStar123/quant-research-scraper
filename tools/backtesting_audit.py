@@ -34,9 +34,13 @@ try:
         with page.expect_download() as dl:page.locator('#download').click()
         assert dl.value.suggested_filename=='walk-forward-returns.csv'
         page.evaluate('window.scrollTo(0,0)')
+        mobile_dir = ROOT / 'output' / 'playwright'
+        mobile_dir.mkdir(parents=True, exist_ok=True)
+        page.screenshot(path=str(mobile_dir / 'backtesting-desktop-inspection.png'), full_page=True)
         page.screenshot(path=str(ROOT/'examples/portfolio/backtesting/preview.png'))
         page.set_viewport_size({'width':390,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'),'mobile overflow'
+        page.screenshot(path=str(mobile_dir / 'backtesting-mobile.png'), full_page=True)
         assert not errors,errors
         print('PASS: historical rerun, changed costs, two equity curves, 50 real strategies, search and export')
         browser.close()
