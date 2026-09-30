@@ -166,6 +166,30 @@ i.bench {
     height: auto;
     background: #121e23;
 }
+#chart:focus-visible {
+    outline: 2px solid #c7a96b;
+    outline-offset: 5px;
+}
+#chart polyline {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+#inspection-line {
+    stroke: #dbe4e3;
+    stroke-width: 1;
+    stroke-dasharray: 3 4;
+    opacity: .55;
+}
+#inspection-equity {
+    fill: #d4b877;
+    stroke: #101619;
+    stroke-width: 2;
+}
+#inspection-benchmark {
+    fill: #5a7c88;
+    stroke: #101619;
+    stroke-width: 2;
+}
 #cursor {
     font: 11px monospace;
     color: #c5b78b;

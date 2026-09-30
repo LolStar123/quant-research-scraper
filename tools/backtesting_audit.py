@@ -21,6 +21,11 @@ try:
         page.locator('#cost').fill('50');page.locator('#run').click()
         assert page.evaluate('__backtest.result.stats.total')!=before
         assert page.locator('#chart polyline').count()==2
+        assert page.locator('#inspection-equity').count()==1
+        page.locator('#chart').focus()
+        before_cursor = page.locator('#cursor').inner_text()
+        page.keyboard.press('ArrowLeft')
+        assert page.locator('#cursor').inner_text() != before_cursor
         page.locator('[data-tab="archive"]').click()
         assert page.locator('#strategies tr').count()==50
         page.locator('#search').fill('parity')

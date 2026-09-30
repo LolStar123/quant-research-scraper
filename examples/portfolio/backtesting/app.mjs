@@ -41,7 +41,24 @@ function run() {
             x = (i) => 50 + (i / (result.curve.length - 1)) * 930,
             y = (v) => 280 - (v / max) * 250;
         $("#chart").innerHTML =
-            `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Out-of-sample equity against buy and hold">${[0, 0.25, 0.5, 0.75, 1].map((p) => `<line x1="50" x2="980" y1="${y(max * p)}" y2="${y(max * p)}" stroke="#2c4149"/><text x="8" y="${y(max * p) + 4}" fill="#839fa7" font-size="11">${(max * p).toFixed(1)}</text>`).join("")}${["benchmark", "equity"].map((k) => `<polyline points="${result.curve.map((p, i) => `${x(i).toFixed(1)},${y(p[k]).toFixed(1)}`).join(" ")}" stroke="${k === "equity" ? "#d4b877" : "#5a7c88"}" stroke-width="2" fill="none"/>`).join("")}<text x="50" y="309" fill="#839fa7" font-size="12">${result.curve[0].date}</text><text x="980" y="309" text-anchor="end" fill="#839fa7" font-size="12">${result.curve.at(-1).date}</text></svg>`;
+            `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Out-of-sample equity against buy and hold">${[0, 0.25, 0.5, 0.75, 1].map((p) => `<line x1="50" x2="980" y1="${y(max * p)}" y2="${y(max * p)}" stroke="#2c4149"/><text x="8" y="${y(max * p) + 4}" fill="#839fa7" font-size="11">${(max * p).toFixed(1)}</text>`).join("")}${["benchmark", "equity"].map((k) => `<polyline points="${result.curve.map((p, i) => `${x(i).toFixed(1)},${y(p[k]).toFixed(1)}`).join(" ")}" stroke="${k === "equity" ? "#d4b877" : "#5a7c88"}" stroke-width="2" fill="none"/>`).join("")}<g id="inspection" aria-hidden="true"><line id="inspection-line" x1="980" x2="980" y1="16" y2="280"/><circle id="inspection-equity" r="4"/><circle id="inspection-benchmark" r="3"/></g><text x="50" y="309" fill="#839fa7" font-size="12">${result.curve[0].date}</text><text x="980" y="309" text-anchor="end" fill="#839fa7" font-size="12">${result.curve.at(-1).date}</text></svg>`;
+        const showPoint = (index) => {
+            const point = result.curve[index],
+                px = x(index),
+                line = $("#inspection-line"),
+                equity = $("#inspection-equity"),
+                benchmark = $("#inspection-benchmark");
+            line.setAttribute("x1", px.toFixed(1));
+            line.setAttribute("x2", px.toFixed(1));
+            equity.setAttribute("cx", px.toFixed(1));
+            equity.setAttribute("cy", y(point.equity).toFixed(1));
+            benchmark.setAttribute("cx", px.toFixed(1));
+            benchmark.setAttribute("cy", y(point.benchmark).toFixed(1));
+            $("#cursor").textContent =
+                `${point.date} / strategy ${point.equity.toFixed(3)} / benchmark ${point.benchmark.toFixed(3)} / ${point.position ? "invested" : "cash"} / SMA ${point.period}`;
+        };
+        let inspectionIndex = result.curve.length - 1;
+        showPoint(inspectionIndex);
         $("#chart").onpointermove = (e) => {
             const rect = $("#chart").getBoundingClientRect(),
                 i = Math.max(
@@ -56,9 +73,16 @@ function run() {
                         ),
                     ),
                 ),
-                p = result.curve[i];
-            $("#cursor").textContent =
-                `${p.date} / strategy ${p.equity.toFixed(3)} / benchmark ${p.benchmark.toFixed(3)} / ${p.position ? "invested" : "cash"} / SMA ${p.period}`;
+                next = Math.round(i);
+            inspectionIndex = next;
+            showPoint(inspectionIndex);
+        };
+        $("#chart").onkeydown = (e) => {
+            if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+            e.preventDefault();
+            inspectionIndex = e.key === 'Home' ? 0 : e.key === 'End' ? result.curve.length - 1 : inspectionIndex + (e.key === 'ArrowRight' ? 1 : -1);
+            inspectionIndex = Math.max(0, Math.min(result.curve.length - 1, inspectionIndex));
+            showPoint(inspectionIndex);
         };
         $("#windows").innerHTML = result.windows
             .slice()
