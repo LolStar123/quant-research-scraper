@@ -1,29 +1,5 @@
-<!-- working-example:start -->
-## Run a real historical experiment
+The browser SMA experiment is a separate implementation. Open the [workbench](https://lolstar123.github.io/quant-research-scraper/backtesting/) or follow the [repository guide](../../README.md) to serve it locally. The Python files below preserve the original 50-strategy research.
 
-**[Open the research workbench](https://lolstar123.github.io/markets-backtesting/)**
-
-The browser loads 5,351 historical SPY closes from the existing research cache. It selects a
-moving-average rule within each training window, freezes that choice for the next test window,
-lags positions and subtracts trading costs. Change the windows and fees, rerun, inspect each
-choice and export the out-of-sample returns.
-
-A separate archive presents all 50 original strategy results from
-`quantihack_alt_data_50_results.csv`, including full-period and stress-window statistics and
-paper references. These recorded research runs are not silently relabelled as the browser experiment.
-
-![Historical walk-forward research workbench](examples/portfolio/preview.png)
-
-```sh
-python -m http.server 8000 --directory examples/portfolio
-node --test examples/portfolio/model.test.mjs
-```
-
-The price cache's corporate-action adjustment provenance has not been independently
-reverified. Treat the browser results as a reproducible research exercise, not audited investment
-performance. Recurring public browser checks run every four hours. Model checks explicitly
-perturb future data and verify that earlier choices and returns do not change.
-<!-- working-example:end -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
@@ -108,8 +84,8 @@ The verified run used Python 3.11.9. The command needs network access for Yahoo 
 the optional local daily-bar CSVs are present.
 
 ```bash
-git clone https://github.com/LolStar123/markets-backtesting.git
-cd markets-backtesting
+git clone https://github.com/LolStar123/quant-research-scraper.git
+cd quant-research-scraper/research/backtesting
 python -m pip install -r requirements.txt
 python quantihack_alt_data_50.py
 ```

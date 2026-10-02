@@ -1,5 +1,6 @@
 import { deduplicate, fromCrossref, key, search, bibtex } from "./model.mjs";
 import { backtest } from "./backtesting/model.mjs";
+import { mountEquityChart } from "./backtesting/chart.mjs";
 const $ = (s) => document.querySelector(s);
 const esc = (s) =>
     String(s ?? "").replace(
@@ -20,43 +21,33 @@ let papers = [],
     saved = new Set(),
     collected = "";
 const size = 8;
-const forwardRuns = [
-    { training: 504, testing: 63, costBps: 5 },
-    { training: 252, testing: 21, costBps: 5 },
-    { training: 756, testing: 126, costBps: 8 },
-];
-let forwardPrices = [], forwardRun = 0;
-const pct = (value) => (value * 100).toFixed(1) + "%";
+let forwardPrices = [], disposeForward;
+const pct = value => (value * 100).toFixed(1) + "%";
 function renderForward() {
     if (!forwardPrices.length) return;
-    const config = forwardRuns[forwardRun++ % forwardRuns.length];
-    const result = backtest(forwardPrices, config);
-    const stats = [
-        [pct(result.stats.cagr), "oos return"],
-        [result.stats.sharpe.toFixed(2), "sharpe"],
-        [pct(result.stats.drawdown), "drawdown"],
-    ];
-    $("#forward-stats").innerHTML = stats.map(([value, label]) => `<span><strong>${value}</strong><small>${label}</small></span>`).join("");
-    const curves = result.curve.flatMap((point) => [point.equity, point.benchmark]);
-    const min = Math.min(...curves), max = Math.max(...curves), range = Math.max(.01, max - min);
-    const x = (index) => 2 + index / (result.curve.length - 1) * 756;
-    const y = (value) => 96 - (value - min) / range * 90;
-    const path = (key) => result.curve.map((point, index) => `${index ? "L" : "M"}${x(index).toFixed(1)} ${y(point[key]).toFixed(1)}`).join(" ");
-    $("#forward-chart").innerHTML = `<svg viewBox="0 0 760 102" preserveAspectRatio="none"><path d="${path("benchmark")}" class="benchmark"/><path d="${path("equity")}" class="strategy"/></svg>`;
-    $("#forward-window").textContent = `${config.training / 252}y train · ${config.testing} unseen sessions · ${config.costBps}bp costs`;
-    window.__research = { ...(window.__research || {}), forwardReady: true, forwardWindows: result.windows.length };
+    try {
+        if ($("#forward-cost").value === "") throw Error("Enter a cost per side, including zero.");
+        const config = {training: +$("#forward-training").value, testing: +$("#forward-testing").value, costBps: +$("#forward-cost").value};
+        const result = backtest(forwardPrices, config);
+        $("#forward-stats").innerHTML = [[pct(result.stats.cagr),"OOS CAGR"],[result.stats.sharpe.toFixed(2),"Sharpe"],[pct(result.stats.drawdown),"Drawdown"]].map(([v,l]) => `<span><strong>${v}</strong><small>${l}</small></span>`).join("");
+        disposeForward?.();
+        disposeForward = mountEquityChart($("#forward-chart"), result.curve, $("#forward-cursor"));
+        $("#forward-state").textContent = `${config.training} training / ${config.testing} test sessions / ${config.costBps} bp per exposure change.`;
+        $("#forward-window").textContent = `${result.curve[0].date} to ${result.curve.at(-1).date} \u00b7 ${result.windows.length} test windows`;
+        window.__research = {...(window.__research || {}), forwardReady: true, forwardWindows: result.windows.length, forwardResult: result, forwardConfig: config};
+    } catch (error) { $("#forward-state").textContent = error.message + " The chart shows the last successful run."; }
 }
 async function loadForward() {
     try {
         const response = await fetch("backtesting/data/spy.json");
-        if (!response.ok) throw Error("prices unavailable");
+        if (!response.ok) throw Error("Historical prices could not load. Reload to retry.");
         forwardPrices = (await response.json()).prices;
+        $("#run-test").disabled = false;
         renderForward();
-    } catch (error) {
-        $("#forward-window").textContent = error.message;
-    }
+    } catch (error) { $("#forward-state").textContent = error.message; }
 }
 $("#run-test").onclick = renderForward;
+for (const id of ["forward-training","forward-testing","forward-cost"]) $("#"+id).addEventListener("input",() => $("#forward-state").textContent = "Settings changed. Run test to apply them; the chart shows the last run.");
 loadForward();
 function store() {
     try {
@@ -93,7 +84,7 @@ function render() {
             .slice(page * size, (page + 1) * size)
             .map(
                 (p) =>
-                    `<article class="paper"><div><p class="meta">${p.year || "undated"} · ${p.citations.toLocaleString()} citations</p><h2>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>` : esc(p.title)}</h2><p>${esc(p.authors.slice(0, 3).join(", "))}${p.authors.length > 3 ? " et al." : ""}</p></div><button data-save="${esc(key(p))}" aria-pressed="${saved.has(key(p))}">${saved.has(key(p)) ? "saved" : "save"}</button></article>`,
+                    `<article class="paper"><div><p class="meta">${p.year || "undated"} · ${p.citations.toLocaleString()} citations</p><h2>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a>` : esc(p.title)}</h2><p>${esc(p.authors.slice(0, 3).join(", "))}${p.authors.length > 3 ? " et al." : ""}</p></div><button data-save="${esc(key(p))}" aria-pressed="${saved.has(key(p))}">${saved.has(key(p)) ? "Saved" : "Save"}</button></article>`,
             )
             .join("") ||
         "<p>No papers match. Clear the search, choose another collection, or search Crossref.</p>";
@@ -251,5 +242,5 @@ try {
     render();
 } catch (e) {
     $("#status").textContent = e.message;
-    throw e;
+
 }

@@ -1,4 +1,5 @@
 import { backtest } from "./model.mjs";
+import { mountEquityChart } from "./chart.mjs";
 const $ = (s) => document.querySelector(s),
     esc = (s) =>
         String(s).replace(
@@ -13,9 +14,11 @@ const $ = (s) => document.querySelector(s),
                 })[c],
         ),
     pct = (x) => (x * 100).toFixed(1) + "%";
-let data, research, result;
+let data, research, result, disposeChart;
 function run() {
     try {
+        if (!data) return;
+        if ($("#cost").value === "") throw Error("Enter a cost per side, including zero.");
         result = backtest(data.prices, {
             training: +$("#training").value,
             testing: +$("#testing").value,
@@ -33,57 +36,10 @@ function run() {
                     `<span><strong>${v}</strong><small>${k}</small></span>`,
             )
             .join("");
-        const values = result.curve.flatMap((p) => [p.equity, p.benchmark]),
-            max = Math.max(...values) * 1.05,
-            chart = $("#chart");
-        let inspectionIndex = result.curve.length - 1;
-        const renderChart = () => {
-            const mobile = chart.clientWidth < 600,
-                w = mobile ? Math.max(320, Math.round(chart.clientWidth || 360)) : 1000,
-                h = mobile ? 260 : 320,
-                left = mobile ? 42 : 50,
-                right = mobile ? w - 14 : 980,
-                top = 16,
-                bottom = mobile ? 226 : 280,
-                labelSize = mobile ? 12 : 11,
-                dateSize = mobile ? 11 : 12,
-                x = (i) => left + (i / (result.curve.length - 1)) * (right - left),
-                y = (v) => bottom - (v / max) * (bottom - top);
-            chart.innerHTML = `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img" aria-label="Out-of-sample equity against buy and hold">${[0, 0.25, 0.5, 0.75, 1].map((p) => `<line x1="${left}" x2="${right}" y1="${y(max * p)}" y2="${y(max * p)}" stroke="#2c4149"/><text x="${mobile ? 4 : 8}" y="${y(max * p) + 4}" fill="#839fa7" font-size="${labelSize}">${(max * p).toFixed(1)}</text>`).join("")}${["benchmark", "equity"].map((k) => `<polyline points="${result.curve.map((p, i) => `${x(i).toFixed(1)},${y(p[k]).toFixed(1)}`).join(" ")}" stroke="${k === "equity" ? "#d4b877" : "#5a7c88"}" stroke-width="2" fill="none"/>`).join("")}<g id="inspection" aria-hidden="true"><line id="inspection-line" x1="${right}" x2="${right}" y1="${top}" y2="${bottom}"/><circle id="inspection-equity" r="4"/><circle id="inspection-benchmark" r="3"/></g><text x="${left}" y="${h - 11}" fill="#839fa7" font-size="${dateSize}">${result.curve[0].date}</text><text x="${right}" y="${h - 11}" text-anchor="end" fill="#839fa7" font-size="${dateSize}">${result.curve.at(-1).date}</text></svg>`;
-            const showPoint = (index) => {
-                const point = result.curve[index],
-                    px = x(index),
-                    line = $("#inspection-line"),
-                    equity = $("#inspection-equity"),
-                    benchmark = $("#inspection-benchmark");
-                line.setAttribute("x1", px.toFixed(1));
-                line.setAttribute("x2", px.toFixed(1));
-                equity.setAttribute("cx", px.toFixed(1));
-                equity.setAttribute("cy", y(point.equity).toFixed(1));
-                benchmark.setAttribute("cx", px.toFixed(1));
-                benchmark.setAttribute("cy", y(point.benchmark).toFixed(1));
-                $("#cursor").textContent = `${point.date} / strategy ${point.equity.toFixed(3)} / benchmark ${point.benchmark.toFixed(3)} / ${point.position ? "invested" : "cash"} / SMA ${point.period}`;
-            };
-            showPoint(inspectionIndex);
-            chart.onpointermove = (e) => {
-                const rect = chart.getBoundingClientRect(),
-                    pointerX = ((e.clientX - rect.left) / rect.width) * w,
-                    next = Math.max(0, Math.min(result.curve.length - 1, Math.round(((pointerX - left) / (right - left)) * (result.curve.length - 1))));
-                inspectionIndex = next;
-                showPoint(inspectionIndex);
-            };
-            chart.onkeydown = (e) => {
-                if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
-                e.preventDefault();
-                inspectionIndex = e.key === "Home" ? 0 : e.key === "End" ? result.curve.length - 1 : inspectionIndex + (e.key === "ArrowRight" ? 1 : -1);
-                inspectionIndex = Math.max(0, Math.min(result.curve.length - 1, inspectionIndex));
-                showPoint(inspectionIndex);
-            };
-        };
-        if (window.__quantChartResize) window.removeEventListener("resize", window.__quantChartResize);
-        window.__quantChartResize = renderChart;
-        window.addEventListener("resize", window.__quantChartResize);
-        renderChart();
+        disposeChart?.();
+        disposeChart = mountEquityChart($("#chart"), result.curve, $("#cursor"), {height: 360});
+        $("#run-state").textContent = `${$("#training").value} training / ${$("#testing").value} test sessions / ${result.costBps} bp per exposure change.`;
+        $("#download").disabled = false;
         $("#windows").innerHTML = result.windows
             .slice()
             .reverse()
@@ -94,7 +50,8 @@ function run() {
             .join("");
         window.__backtest = { ready: true, result, prices: data.prices.length };
     } catch (e) {
-        $("#cursor").textContent = e.message;
+        $("#run-state").textContent = e.message + " The chart shows the last successful run.";
+        $("#download").disabled = true;
     }
 }
 function archive() {
@@ -119,9 +76,10 @@ for (const b of document.querySelectorAll("nav button"))
         for (const s of ["experiment", "archive"])
             $("#" + s).hidden = s !== b.dataset.tab;
         for (const n of document.querySelectorAll("nav button"))
-            n.classList.toggle("active", n === b);
+            { n.classList.toggle("active", n === b); n.setAttribute("aria-pressed", n === b); }
     };
 $("#run").onclick = run;
+for (const id of ["training","testing","cost"]) $("#"+id).addEventListener("input",() => { $("#run-state").textContent = "Settings changed. Run test to apply them; the chart shows the last run."; $("#download").disabled = true; });
 $("#search").oninput = archive;
 $("#sort").onchange = archive;
 $("#download").onclick = () => {
@@ -157,9 +115,12 @@ try {
     $("#provenance").textContent =
         data.note +
         " The browser experiment is a separate transparent moving-average walk-forward test; it does not reproduce all fifty Python strategies. Positions are marked to close, with no leverage, interest on cash or taxes.";
+    $("#run").disabled = false;
+    $('[data-tab="archive"]').disabled = false;
     run();
     archive();
+    if (location.hash === "#archive") $('[data-tab="archive"]').click();
 } catch (e) {
     $("#source").textContent = e.message;
-    throw e;
+
 }
