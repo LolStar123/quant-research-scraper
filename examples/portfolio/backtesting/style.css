@@ -49,8 +49,13 @@
     font-size:13px
 }
 .settings #run-state {
-    min-height:58px;
     margin:12px 0
+}
+.settings #run-state:empty {
+    display:none
+}
+.settings>.detail-link {
+    grid-column:1/-1
 }
 .experiment-results {
     min-width:0

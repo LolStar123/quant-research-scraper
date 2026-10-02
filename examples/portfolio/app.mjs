@@ -32,8 +32,8 @@ function renderForward() {
         $("#forward-stats").innerHTML = [[pct(result.stats.cagr),"OOS CAGR"],[result.stats.sharpe.toFixed(2),"Sharpe"],[pct(result.stats.drawdown),"Drawdown"]].map(([v,l]) => `<span><strong>${v}</strong><small>${l}</small></span>`).join("");
         disposeForward?.();
         disposeForward = mountEquityChart($("#forward-chart"), result.curve, $("#forward-cursor"));
-        $("#forward-state").textContent = `${config.training} training / ${config.testing} test sessions / ${config.costBps} bp per exposure change.`;
-        $("#forward-window").textContent = `${result.curve[0].date} to ${result.curve.at(-1).date} \u00b7 ${result.windows.length} test windows`;
+        $("#forward-state").textContent = "";
+        $("#forward-window").textContent = `Historical \u00b7 ${result.curve[0].date} to ${result.curve.at(-1).date}`;
         window.__research = {...(window.__research || {}), forwardReady: true, forwardWindows: result.windows.length, forwardResult: result, forwardConfig: config};
     } catch (error) { $("#forward-state").textContent = error.message + " The chart shows the last successful run."; }
 }
@@ -47,7 +47,7 @@ async function loadForward() {
     } catch (error) { $("#forward-state").textContent = error.message; }
 }
 $("#run-test").onclick = renderForward;
-for (const id of ["forward-training","forward-testing","forward-cost"]) $("#"+id).addEventListener("input",() => $("#forward-state").textContent = "Settings changed. Run test to apply them; the chart shows the last run.");
+for (const id of ["forward-training","forward-testing","forward-cost"]) $("#"+id).addEventListener("input",() => $("#forward-state").textContent = "Settings changed. Run test to update.");
 loadForward();
 function store() {
     try {
@@ -238,7 +238,7 @@ try {
         saved = new Set(rows.map(key));
     } catch {}
     $("#provenance").textContent = `Crossref · ${new Date(collected).toLocaleDateString()}`;
-    $("#status").textContent = `${papers.length} papers ready.`;
+    $("#status").textContent = "";
     render();
 } catch (e) {
     $("#status").textContent = e.message;

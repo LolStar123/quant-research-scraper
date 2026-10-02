@@ -26,9 +26,9 @@ function run() {
         });
         const s = result.stats;
         $("#stats").innerHTML = [
-            [pct(s.cagr), "out-of-sample CAGR"],
-            [s.sharpe.toFixed(2), "daily-return Sharpe"],
-            [pct(s.drawdown), "maximum drawdown"],
+            [pct(s.cagr), "OOS CAGR"],
+            [s.sharpe.toFixed(2), "Sharpe"],
+            [pct(s.drawdown), "Drawdown"],
             [result.trades, "exposure changes"],
         ]
             .map(
@@ -38,7 +38,7 @@ function run() {
             .join("");
         disposeChart?.();
         disposeChart = mountEquityChart($("#chart"), result.curve, $("#cursor"), {height: 360});
-        $("#run-state").textContent = `${$("#training").value} training / ${$("#testing").value} test sessions / ${result.costBps} bp per exposure change.`;
+        $("#run-state").textContent = "";
         $("#download").disabled = false;
         $("#windows").innerHTML = result.windows
             .slice()
@@ -63,7 +63,7 @@ function archive() {
                 key === "combined_rank" ? +a[key] - b[key] : +b[key] - a[key],
             );
     $("#archive-count").textContent =
-        rows.length + " of 50 original research runs";
+        rows.length + " strategies";
     $("#strategies").innerHTML = rows
         .map(
             (r) =>
@@ -75,11 +75,14 @@ for (const b of document.querySelectorAll("nav button"))
     b.onclick = () => {
         for (const s of ["experiment", "archive"])
             $("#" + s).hidden = s !== b.dataset.tab;
+        if (data) $("#source").textContent = b.dataset.tab === "archive"
+            ? "Python archive · full 2010-01-01 to 2026-04-06 · stress 2026-02-01 to 2026-04-06 · selection bias"
+            : `Historical SPY · ${data.prices[0].date} to ${data.prices.at(-1).date}`;
         for (const n of document.querySelectorAll("nav button"))
             { n.classList.toggle("active", n === b); n.setAttribute("aria-pressed", n === b); }
     };
 $("#run").onclick = run;
-for (const id of ["training","testing","cost"]) $("#"+id).addEventListener("input",() => { $("#run-state").textContent = "Settings changed. Run test to apply them; the chart shows the last run."; $("#download").disabled = true; });
+for (const id of ["training","testing","cost"]) $("#"+id).addEventListener("input",() => { $("#run-state").textContent = "Settings changed. Run test to update."; $("#download").disabled = true; });
 $("#search").oninput = archive;
 $("#sort").onchange = archive;
 $("#download").onclick = () => {
@@ -111,10 +114,7 @@ try {
         }),
     );
     $("#source").textContent =
-        `SPY / ${data.prices.length.toLocaleString()} daily closes / ${data.prices[0].date} to ${data.prices.at(-1).date}`;
-    $("#provenance").textContent =
-        data.note +
-        " The browser experiment is a separate transparent moving-average walk-forward test; it does not reproduce all fifty Python strategies. Positions are marked to close, with no leverage, interest on cash or taxes.";
+        `Historical SPY · ${data.prices[0].date} to ${data.prices.at(-1).date}`;
     $("#run").disabled = false;
     $('[data-tab="archive"]').disabled = false;
     run();

@@ -326,7 +326,7 @@ form>label {
     line-height:1.15;
     font-weight:520;
     letter-spacing:-.035em;
-    margin:0
+    margin:0 0 18px
 }
 .panel-note {
     color:var(--muted);
@@ -351,6 +351,9 @@ form>label {
 }
 #forward-state {
     min-height:40px
+}
+#status:empty,#forward-state:empty {
+    display:none
 }
 #forward-stats {
     display:grid;
